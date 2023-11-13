@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>W-Wave radio</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/init.css">
+  <link rel="stylesheet" href="css/helpers.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/flex-grid_v3.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__items flex-column">
+        <a href="#" class="header__logo">
+          <img src="img/header/svg/logo.svg" alt="Логотип радио V-Wave">
+        </a>
+        <nav>
+          <ul class="header__nav flex-row flex-justify-spb list-reset">
+            <li>
+              Подкасты
+            </li>
+            <li>
+              Передачи
+            </li>
+            <li>
+              Гости
+            </li>
+            <li>
+              Плейлисты
+            </li>
+            <li>
+              О&nbsp;нас
+            </li>
+          </ul>
+        </nav>
+        <svg class="header__search" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M21 21L16.65 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
+    <div class="header__borders"></div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container hero__bkg">
+        <div class="flex-column hero__items">
+          <div class="hero__descr">
+            <h1 class="hero__h1">
+              <span class="hero__h1-p1">Радио</span>&nbsp;<span class="hero__h1-p2">W-Wave</span>
+            </h1>
+            <p class="hero__hello">
+              Привет, на связи W-Wave! Раньше мы были изданием, а теперь пробуем себя в разоворном жанре. Говорим о музыке, политике, истории, науке и культуре. Здесь, помимо прямого эфира — архив передач и многое другое:)
+            </p>
+          </div>
+          <button class="hero__listen-btn">Слушать эфир</button>
+        </div>
+      </div>
+    </section>
+    <section class="section-pd podcasts">
+      <div class="container">
+        <h2 class="podcasts__h2">Подкасты</h2>
+        <ul class="gr1-grid grid-row-auto list-reset podcasts__cards">
+          <li class="podcasts__card flex-column gr1-cell">
+            <div class="podcasts__img-wrap">
+              <div class="podcasts__img">
+                <picture>
+                  <!-- 112x140 -->
+                  <source srcset="img/podcasts/112_140/card1.avif" type="image/avif" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/112_140/card1.webp" type="image/webp" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/112_140/card1.jpg" type="image/jpeg" media="(min-width: 321px)">
+                  <!-- 256x72 -->
+                  <source srcset="img/podcasts/256_72/card1.avif" type="image/avif" media="(max-width: 320px)">
+                  <source srcset="img/podcasts/256_72/card1.webp" type="image/webp" media="(max-width: 320px)">
+                  <source srcset="img/podcasts/256_72/card1.jpg" type="image/jpeg" media="(max-width: 320px)">
+                  <img src="img/podcasts/" alt="">
+                </picture>
+                <time class="podcasts__date" datetime="2023-06-14">14&nbsp;июня</time>
+              </div>
+            </div>
+            <div class="podcasts__descr flex-column">
+              <time class="podcasts__time" datetime="15:43">15:43</time>
+              <h3 class="podcasts__h3">Европа. XIX век</h3>
+              <span class="podcasts__author">Дмитрий Гутенберг</span>
+            </div>
+          </li>
+          <li class="podcasts__card flex-column gr1-cell">
+            <div class="podcasts__img-wrap">
+              <div class="podcasts__img">
+                <picture>
+                  <!-- 112x140 -->
+                  <source srcset="img/podcasts/112_140/card2.avif" type="image/avif" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/112_140/card2.webp" type="image/webp" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/112_140/card2.jpg" type="image/jpeg" media="(min-width: 321px)">
+                  <!-- 256x72 -->
+                  <source srcset="img/podcasts/256_72/card2.avif" type="image/avif" media="(max-width: 320px)">
+                  <source srcset="img/podcasts/256_72/card2.webp" type="image/webp" media="(max-width: 320px)">
+                  <source srcset="img/podcasts/256_72/card2.jpg" type="image/jpeg" media="(max-width: 320px)">
+                  <img src="img/podcasts/" alt="">
+                </picture>
+                <time class="podcasts__date" datetime="2023-06-11">11&nbsp;июня</time>
+              </div>
+            </div>
+            <div class="podcasts__descr flex-column">
+              <time class="podcasts__time" datetime="5:32">5:32</time>
+              <h3 class="podcasts__h3">О музыке</h3>
+              <span class="podcasts__author">Дмитрий Гутенберг</span>
+            </div>
+          </li>
+          <li class="podcasts__card flex-column gr1-cell">
+            <div class="podcasts__img-wrap">
+              <div class="podcasts__img">
+                <picture>
+                  <!-- 112x140 -->
+                  <source srcset="img/podcasts/112_140/card3.avif" type="image/avif" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/112_140/card3.webp" type="image/webp" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/112_140/card3.jpg" type="image/jpeg" media="(min-width: 321px)">
+                  <!-- 256x72 -->
+                  <source srcset="img/podcasts/256_72/card3.avif" type="image/avif" media="(max-width: 320px)">
+                  <source srcset="img/podcasts/256_72/card3.webp" type="image/webp" media="(max-width: 320px)">
+                  <source srcset="img/podcasts/256_72/card3.jpg" type="image/jpeg" media="(max-width: 320px)">
+                  <img src="img/podcasts/" alt="">
+                </picture>
+                <time class="podcasts__date" datetime="2023-06-08">8&nbsp;июня</time>
+              </div>
+            </div>
+            <div class="podcasts__descr flex-column">
+              <time class="podcasts__time" datetime="8:54">8:54</time>
+              <h3 class="podcasts__h3">Люди сегодня</h3>
+              <span class="podcasts__author">Анна Васильева</span>
+            </div>
+          </li>
+          <li class="podcasts__card flex-column gr1-cell">
+            <div class="podcasts__img-wrap">
+              <div class="podcasts__img">
+                <picture>
+                  <!-- 112x140 -->
+                  <source srcset="img/podcasts/112_140/card4.avif" type="image/avif" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/112_140/card4.webp" type="image/webp" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/112_140/card4.jpg" type="image/jpeg" media="(min-width: 321px)">
+                  <!-- 256x72 -->
+                  <source srcset="img/podcasts/256_72/card4.avif" type="image/avif" media="(max-width: 320px)">
+                  <source srcset="img/podcasts/256_72/card4.webp" type="image/webp" media="(max-width: 320px)">
+                  <source srcset="img/podcasts/256_72/card4.jpg" type="image/jpeg" media="(max-width: 320px)">
+                  <img src="img/podcasts/" alt="">
+                </picture>
+                <time class="podcasts__date" datetime="2023-06-5">5&nbsp;июня</time>
+              </div>
+            </div>
+            <div class="podcasts__descr flex-column">
+              <time class="podcasts__time" datetime="9:04">9:04</time>
+              <h3 class="podcasts__h3">Хэллоу, Африка!</h3>
+              <span class="podcasts__author">Пётр Дмитриевский</span>
+            </div>
+          </li>
+          <li class="podcasts__card flex-column gr1-cell">
+            <div class="podcasts__img-wrap">
+              <div class="podcasts__img">
+                <picture>
+                  <!-- 112x140 -->
+                  <source srcset="img/podcasts/112_140/card5.avif" type="image/avif" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/112_140/card5.webp" type="image/webp" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/112_140/card5.jpg" type="image/jpeg" media="(min-width: 321px)">
+                  <!-- 256x72 -->
+                  <source srcset="img/podcasts/256_72/card5.avif" type="image/avif" media="(max-width: 320px)">
+                  <source srcset="img/podcasts/256_72/card5.webp" type="image/webp" media="(max-width: 320px)">
+                  <source srcset="img/podcasts/256_72/card5.jpg" type="image/jpeg" media="(max-width: 320px)">
+                  <img src="img/podcasts/" alt="">
+                </picture>
+                <time class="podcasts__date" datetime="2023-06-02">2&nbsp;июня</time>
+              </div>
+            </div>
+            <div class="podcasts__descr flex-column">
+              <time class="podcasts__time" datetime="7:03">7:03</time>
+              <h3 class="podcasts__h3">Обо всём</h3>
+              <span class="podcasts__author">Пётр Дмитриевский</span>
+            </div>
+          </li>
+          <li class="podcasts__card flex-column gr1-cell">
+            <div class="podcasts__img-wrap">
+              <div class="podcasts__img">
+                <picture>
+                  <!-- 112x140 -->
+                  <source srcset="img/podcasts/112_140/card6.avif" type="image/avif" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/112_140/card6.webp" type="image/webp" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/112_140/card6.jpg" type="image/jpeg" media="(min-width: 321px)">
+                  <!-- 256x72 -->
+                  <source srcset="img/podcasts/256_72/card6.avif" type="image/avif" media="(max-width: 320px)">
+                  <source srcset="img/podcasts/256_72/card6.webp" type="image/webp" media="(max-width: 320px)">
+                  <source srcset="img/podcasts/256_72/card6.jpg" type="image/jpeg" media="(max-width: 320px)">
+                  <img src="img/podcasts/" alt="">
+                </picture>
+                <time class="podcasts__date" datetime="2023-05-28">28&nbsp;мая</time>
+              </div>
+            </div>
+            <div class="podcasts__descr flex-column">
+              <time class="podcasts__time" datetime="9:15">9:15</time>
+              <h3 class="podcasts__h3">Физика цвета</h3>
+              <span class="podcasts__author">Татьяна Флеганова</span>
+            </div>
+          </li>
+          <li class="podcasts__card flex-column gr1-cell">
+            <div class="podcasts__img-wrap">
+              <div class="podcasts__img">
+                <picture>
+                  <!-- 112x140 -->
+                  <source srcset="img/podcasts/112_140/card7.avif" type="image/avif" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/112_140/card7.webp" type="image/webp" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/112_140/card7.jpg" type="image/jpeg" media="(min-width: 321px)">
+                  <!-- 256x72 -->
+                  <source srcset="img/podcasts/256_72/card7.avif" type="image/avif" media="(max-width: 320px)">
+                  <source srcset="img/podcasts/256_72/card7.webp" type="image/webp" media="(max-width: 320px)">
+                  <source srcset="img/podcasts/256_72/card7.jpg" type="image/jpeg" media="(max-width: 320px)">
+                  <img src="img/podcasts/" alt="">
+                </picture>
+                <time class="podcasts__date" datetime="2023-05-22">22&nbsp;июня</time>
+              </div>
+            </div>
+            <div class="podcasts__descr flex-column">
+              <time class="podcasts__time" datetime="16:04">16:04</time>
+              <h3 class="podcasts__h3">Источник звука</h3>
+              <span class="podcasts__author">Пётр Дмитриевский</span>
+            </div>
+          </li>
+          <li class="podcasts__card flex-column gr1-cell">
+            <div class="podcasts__img-wrap">
+              <div class="podcasts__img">
+                <picture>
+                  <!-- 112x140 -->
+                  <source srcset="img/podcasts/112_140/card8.avif" type="image/avif" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/112_140/card8.webp" type="image/webp" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/112_140/card8.jpg" type="image/jpeg" media="(min-width: 321px)">
+                  <!-- 256x72 -->
+                  <source srcset="img/podcasts/256_72/card8.avif" type="image/avif" media="(max-width: 320px)">
+                  <source srcset="img/podcasts/256_72/card8.webp" type="image/webp" media="(max-width: 320px)">
+                  <source srcset="img/podcasts/256_72/card8.jpg" type="image/jpeg" media="(max-width: 320px)">
+                  <img src="img/podcasts/" alt="">
+                </picture>
+                <time class="podcasts__date" datetime="2023-05-18">18&nbsp;мая</time>
+              </div>
+            </div>
+            <div class="podcasts__descr flex-column">
+              <time class="podcasts__time" datetime="6:55">6:55</time>
+              <h3 class="podcasts__h3">Правила этикета</h3>
+              <span class="podcasts__author">Татьяна Флеганова</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section-pd broadcast">
+      <div class="container">
+        <div class="flex-row flex-justify-spb gutters-v1 broadcast__items">
+          <div class="flex-column flex-justify-spb broadcast__col1">
+            <h2 class="broadcast__h2">Передачи</h2>
+            <div class="broadcast__adv flex-row flex-justify-spb">
+              <div class="broadcast__mic"></div>
+              <div class="flex-column-rev broadcast__arch">
+                <a href="#" class="broadcast__arch-btn">Архив</a>
+                <p class="broadcast__arch-text">В архив попадают все передачи, которые вы пропустили! Enjoy:)</p>
+              </div>
+            </div>
+          </div>
+          <ul id="id-broadcast-ul" class="gr2-grid grid-row-auto list-reset broadcast__cards">
+            <li class="broadcast__card flex-column gr2-cell">
+              <picture>
+                <!-- 255x148 -->
+                <source srcset="img/broadcast/255_148/card1.avif" type="image/avif" media="(min-width: 321px)">
+                <source srcset="img/broadcast/255_148/card1.webp" type="image/webp" media="(min-width: 321px)">
+                <source srcset="img/broadcast/255_148/card1.jpg" type="image/jpg" media="(min-width: 321px)">
+                <!-- 113x50 -->
+                <source srcset="img/broadcast/113_50/card1.webp" type="image/webp" media="(max-width: 320px)">
+                <source srcset="img/broadcast/113_50/card1.jpg" type="image/jpg" media="(max-width: 320px)">
+                <img src="img/broadcast/" alt="">
+              </picture>
+              <div class="flex-column flex-justify-spb flex-justify-spb broadcast__descr">
+                <div class="flex-column">
+                  <h3 class="broadcast__h3">О людях и книгах</h3>
+                  <span class="broadcast__text">Анонсируется отдельно</span>
+                </div>
+                <span class="broadcast__more">Подробнее</span>
+              </div>
+            </li>
+            <li class="broadcast__card flex-column gr2-cell">
+              <picture>
+                <!-- 255x148 -->
+                <source srcset="img/broadcast/255_148/card2.avif" type="image/avif" media="(min-width: 321px)">
+                <source srcset="img/broadcast/255_148/card2.webp" type="image/webp" media="(min-width: 321px)">
+                <source srcset="img/broadcast/255_148/card2.jpg" type="image/jpg" media="(min-width: 321px)">
+                <!-- 113x50 -->
+                <source srcset="img/broadcast/113_50/card2.webp" type="image/webp" media="(max-width: 320px)">
+                <source srcset="img/broadcast/113_50/card2.jpg" type="image/jpg" media="(max-width: 320px)">
+                <img src="img/broadcast/" alt="">
+              </picture>
+              <div class="flex-column flex-justify-spb broadcast__descr">
+                <div class="flex-column">
+                  <h3 class="broadcast__h3">Графомания td</h3>
+                  <span class="broadcast__text">По понедельникам в <time datetime="10:00">10:00</time></span>
+                </div>
+                <span class="broadcast__more">Подробнее</span>
+              </div>
+            </li>
+            <li class="broadcast__card flex-column gr2-cell">
+              <picture>
+                <!-- 255x148 -->
+                <source srcset="img/broadcast/255_148/card3.avif" type="image/avif" media="(min-width: 321px)">
+                <source srcset="img/broadcast/255_148/card3.webp" type="image/webp" media="(min-width: 321px)">
+                <source srcset="img/broadcast/255_148/card3.jpg" type="image/jpg" media="(min-width: 321px)">
+                <!-- 113x50 -->
+                <source srcset="img/broadcast/113_50/card3.webp" type="image/webp" media="(max-width: 320px)">
+                <source srcset="img/broadcast/113_50/card3.jpg" type="image/jpg" media="(max-width: 320px)">
+                <img src="img/broadcast/" alt="">
+              </picture>
+              <div class="flex-column flex-justify-spb broadcast__descr">
+                <div class="flex-column">
+                  <h3 class="broadcast__h3">Не Рим, не Троя</h3>
+                  <span class="broadcast__text">По вторникам в <time datetime="12:00">12:00</time></span>
+                </div>
+                <span class="broadcast__more">Подробнее</span>
+              </div>
+            </li>
+            <li class="broadcast__card flex-column gr2-cell">
+              <picture>
+                <!-- 255x148 -->
+                <source srcset="img/broadcast/255_148/card4.avif" type="image/avif" media="(min-width: 321px)">
+                <source srcset="img/broadcast/255_148/card4.webp" type="image/webp" media="(min-width: 321px)">
+                <source srcset="img/broadcast/255_148/card4.jpg" type="image/jpg" media="(min-width: 321px)">
+                <!-- 113x50 -->
+                <source srcset="img/broadcast/113_50/card4.webp" type="image/webp" media="(max-width: 320px)">
+                <source srcset="img/broadcast/113_50/card4.jpg" type="image/jpg" media="(max-width: 320px)">
+                <img src="img/broadcast/" alt="">
+              </picture>
+              <div class="flex-column flex-justify-spb broadcast__descr">
+                <div class="flex-column">
+                  <h3 class="broadcast__h3">Эрудит</h3>
+                  <span class="broadcast__text">По пятницам в <time datetime="17:00">17:00</time></span>
+                </div>
+                <span class="broadcast__more">Подробнее</span>
+              </div>
+            </li>
+            <li class="broadcast__card flex-column gr2-cell">
+              <picture>
+                <!-- 255x148 -->
+                <source srcset="img/broadcast/255_148/card5.avif" type="image/avif" media="(min-width: 321px)">
+                <source srcset="img/broadcast/255_148/card5.webp" type="image/webp" media="(min-width: 321px)">
+                <source srcset="img/broadcast/255_148/card5.jpg" type="image/jpg" media="(min-width: 321px)">
+                <!-- 113x50 -->
+                <source srcset="img/broadcast/113_50/card5.webp" type="image/webp" media="(max-width: 320px)">
+                <source srcset="img/broadcast/113_50/card5.jpg" type="image/jpg" media="(max-width: 320px)">
+                <img src="img/broadcast/" alt="">
+              </picture>
+              <div class="flex-column flex-justify-spb broadcast__descr">
+                <div class="flex-column">
+                  <h3 class="broadcast__h3">Тонкости эпох</h3>
+                  <span class="broadcast__text">По субботам в <time datetime="10:00">10:00</time></span>
+                </div>
+                <span class="broadcast__more">Подробнее</span>
+              </div>
+            </li>
+            <li class="broadcast__card flex-column gr2-cell">
+              <picture>
+                <!-- 255x148 -->
+                <source srcset="img/broadcast/255_148/card6.avif" type="image/avif" media="(min-width: 321px)">
+                <source srcset="img/broadcast/255_148/card6.webp" type="image/webp" media="(min-width: 321px)">
+                <source srcset="img/broadcast/255_148/card6.jpg" type="image/jpg" media="(min-width: 321px)">
+                <!-- 113x50 -->
+                <source srcset="img/broadcast/113_50/card6.webp" type="image/webp" media="(max-width: 320px)">
+                <source srcset="img/broadcast/113_50/card6.jpg" type="image/jpg" media="(max-width: 320px)">
+                <img src="img/broadcast/" alt="">
+              </picture>
+              <div class="flex-column flex-justify-spb broadcast__descr">
+                <div class="flex-column">
+                  <h3 class="broadcast__h3">Живые мысли</h3>
+                  <span class="broadcast__text">По воскресеньям в <time datetime="15:30">15:30</time></span>
+                </div>
+                <span class="broadcast__more">Подробнее</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="broadcast__bottom">
+      </div>
+    </section>
+    <section class="section-pd guests">
+      <div class="container">
+        <div class="guests__header flex-column">
+          <h2 class="guests__h2">Гости</h2>
+          <span class="guests__intro">У нас бывают:</span>
+          <p class="guests__intro-descr">Блогеры, арт-критики и деятели искусства, музыканты, молодые учёные и люди науки, историки, филологи и много других интересных гостей!</p>
+        </div>
+        <ul class="flex-column gutters-v2 guests__items list-reset">
+          <li class="flex-column guests__card gutters-v1">
+            <picture>
+              <!-- 432x272 -->
+              <source srcset="img/guests/432_272/guest1.avif" type="image/avif"  media="(min-width: 769px)">
+              <source srcset="img/guests/432_272/guest1.webp" type="image/webp" media="(min-width: 769px)">
+              <source srcset="img/guests/432_272/guest1.jpg" type="image/jpeg" media="(min-width: 769px)">
+              <!-- 540x340 -->
+              <source srcset="img/guests/540_340/guest1.avif" type="image/avif"  media="(min-width: 321px)">
+              <source srcset="img/guests/540_340/guest1.webp" type="image/webp" media="(min-width: 321px)">
+              <source srcset="img/guests/540_340/guest1.jpg" type="image/jpeg" media="(min-width: 321px)">
+              <!-- 256x159 -->
+              <source srcset="img/guests/256_159/guest1.avif" type="image/avif"  media="(max-width: 320px)">
+              <source srcset="img/guests/256_159/guest1.webp" type="image/webp" media="(max-width: 320px)">
+              <source srcset="img/guests/256_159/guest1.jpg" type="image/jpeg" media="(max-width: 320px)">
+              <img class="guests__img"  src="img/guests/" alt="Фото Ольга Мартынова">
+            </picture>
+            <div class="flex-column flex-justify-spb gutters-v1 guests__text">
+              <div>
+                <h3 class="guests__h3">Ольга Мартынова</h3>
+                <p class="guests__descr">Российский искусствовед, арт-критик, куратор выставок, дизайнер, кандидат культурологии. Арт-критик газеты «Коммерсантъ». Ведёт активную блогерскую деятельность как куратор музея «Гараж», коим является с 2016 года.</p>
+              </div>
+              <a href="#" class="guests__onair">Эфиры с гостем</a>
+            </div>
+          </li>
+          <li class="flex-column guests__card gutters-v1">
+            <picture>
+              <!-- 432x272 -->
+              <source srcset="img/guests/432_272/guest2.avif" type="image/avif"  media="(min-width: 769px)">
+              <source srcset="img/guests/432_272/guest2.webp" type="image/webp" media="(min-width: 769px)">
+              <source srcset="img/guests/432_272/guest2.jpg" type="image/jpeg" media="(min-width: 769px)">
+              <!-- 540x340 -->
+              <source srcset="img/guests/540_340/guest2.avif" type="image/avif"  media="(min-width: 321px)">
+              <source srcset="img/guests/540_340/guest2.webp" type="image/webp" media="(min-width: 321px)">
+              <source srcset="img/guests/540_340/guest2.jpg" type="image/jpeg" media="(min-width: 321px)">
+              <!-- 256x159 -->
+              <source srcset="img/guests/256_159/guest2.avif" type="image/avif"  media="(max-width: 320px)">
+              <source srcset="img/guests/256_159/guest2.webp" type="image/webp" media="(max-width: 320px)">
+              <source srcset="img/guests/256_159/guest2.jpg" type="image/jpeg" media="(max-width: 320px)">
+              <img class="guests__img" src="img/guests/" alt="Фото Денис Гришин">
+            </picture>
+            <div class="flex-column flex-justify-spb gutters-v1 guests__text">
+              <div>
+                <h3 class="guests__h3">Денис Гришин</h3>
+                <p class="guests__descr">Однозначно, элементы политического процесса являются только методом политического участия и смешаны с не уникальными данными до степени совершённой неузнаваемости, из-за чего возрастает их статус бесполезности.</p>
+              </div>
+              <a href="#" class="guests__onair">Эфиры с гостем</a>
+            </div>
+          </li>
+          <li class="flex-column guests__card gutters-v1">
+            <picture>
+              <!-- 432x272 -->
+              <source srcset="img/guests/432_272/guest3.avif" type="image/avif"  media="(min-width: 769px)">
+              <source srcset="img/guests/432_272/guest3.webp" type="image/webp" media="(min-width: 769px)">
+              <source srcset="img/guests/432_272/guest3.jpg" type="image/jpeg" media="(min-width: 769px)">
+              <!-- 540x340 -->
+              <source srcset="img/guests/540_340/guest3.avif" type="image/avif"  media="(min-width: 321px)">
+              <source srcset="img/guests/540_340/guest3.webp" type="image/webp" media="(min-width: 321px)">
+              <source srcset="img/guests/540_340/guest3.jpg" type="image/jpeg" media="(min-width: 321px)">
+              <!-- 256x159 -->
+              <source srcset="img/guests/256_159/guest3.avif" type="image/avif"  media="(max-width: 320px)">
+              <source srcset="img/guests/256_159/guest3.webp" type="image/webp" media="(max-width: 320px)">
+              <source srcset="img/guests/256_159/guest3.jpg" type="image/jpeg" media="(max-width: 320px)">
+              <img class="guests__img" src="img/guests/" alt="Фото Ольга Мартынова">
+            </picture>
+            <div class="flex-column flex-justify-spb gutters-v1 guests__text">
+              <div>
+                <h3 class="guests__h3">Ольга Мартынова</h3>
+                <p class="guests__descr">С другой стороны, высококачественный прототип будущего проекта выявляет срочную потребность дальнейших направлений развития. В рамках спецификации современных стандартов, реплицированные с зарубежных источников.</p>
+              </div>
+              <a href="#" class="guests__onair">Эфиры с гостем</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section-pd playlists">
+      <div class="container">
+        <div class="flex-row flex-wrap flex-justify-spb gutters-v1 playlists__items">
+          <div class="flex-column playlists__col1">
+            <h2 class="playlists__h2">Плейлисты</h2>
+            <p class="playlists__info">Раздел «Плейлисты» может содержать информацию, не предназначенную для несовершеннолетних</p>
+            <span class="playlists__trademark">© 2021 l W-Wave</span>
+            <span class="playlists__age">18+</span>
+          </div>
+          <ul class="gr3-grid grid-row-auto playlists__cards list-reset">
+            <li class="playlists__card flex-column gr3-cell">
+              <div class="flex-row flex-justify-center">
+                <div class="playlists__img-wrap">
+                  <picture>
+                    <!-- 160x160 -->
+                    <source srcset="img/playlist/160_160/card1.avif" type="image/avif" media="(min-width: 480px)">
+                    <source srcset="img/playlist/160_160/card1.webp" type="image/webp" media="(min-width: 480px)">
+                    <source srcset="img/playlist/160_160/card1.jpg" type="image/jpeg" media="(min-width: 480px)">
+                    <!-- 200x130 -->
+                    <source srcset="img/playlist/200_130/card1.avif" type="image/avif" media="(min-width: 321px)">
+                    <source srcset="img/playlist/200_130/card1.webp" type="image/webp" media="(min-width: 321px)">
+                    <source srcset="img/playlist/200_130/card1.jpg" type="image/jpg" media="(min-width: 321px)">
+                    <!-- 112x112 -->
+                    <source srcset="img/playlist/112_112/card1.avif" type="image/avif" media="(max-width: 320px)">
+                    <source srcset="img/playlist/112_112/card1.webp" type="image/webp" media="(max-width: 320px)">
+                    <source srcset="img/playlist/112_112/card1.jpg" type="image/jpeg" media="(max-width: 320px)">
+                    <img class="playlists__img" src="img/playlist" alt="Ploho">
+                  </picture>
+                  <img src="img/playlist/svg/flag_ru.svg" alt="" class="playlists__flag">
+                </div>
+              </div>
+              <div class="flex-column playlists__text">
+                <h3 class="playlists__h3">Ploho</h3>
+                <span class="playlists__descr">3 последних альбома</span>
+              </div>
+            </li>
+            <li class="playlists__card flex-column gr3-cell">
+              <div class="flex-row flex-justify-center">
+                <div class="playlists__img-wrap">
+                  <picture>
+                    <!-- 160x160 -->
+                    <source srcset="img/playlist/160_160/card2.avif" type="image/avif" media="(min-width: 480px)">
+                    <source srcset="img/playlist/160_160/card2.webp" type="image/webp" media="(min-width: 480px)">
+                    <source srcset="img/playlist/160_160/card2.jpg" type="image/jpeg" media="(min-width: 480px)">
+                    <!-- 200x130 -->
+                    <source srcset="img/playlist/200_130/card2.avif" type="image/avif" media="(min-width: 321px)">
+                    <source srcset="img/playlist/200_130/card2.webp" type="image/webp" media="(min-width: 321px)">
+                    <source srcset="img/playlist/200_130/card2.jpg" type="image/jpg" media="(min-width: 321px)">
+                    <!-- 112x112 -->
+                    <source srcset="img/playlist/112_112/card2.avif" type="image/avif" media="(max-width: 320px)">
+                    <source srcset="img/playlist/112_112/card2.webp" type="image/webp" media="(max-width: 320px)">
+                    <source srcset="img/playlist/112_112/card2.jpg" type="image/jpeg" media="(max-width: 320px)">
+                    <img class="playlists__img" src="img/playlist" alt="Molchat Doma">
+                  </picture>
+                  <img src="img/playlist/svg/flag_ru.svg" alt="" class="playlists__flag">
+                </div>
+              </div>
+              <div class="flex-column playlists__text">
+                <h3 class="playlists__h3">Molchat Doma</h3>
+                <span class="playlists__descr">Все песни</span>
+              </div>
+            </li>
+            <li class="playlists__card flex-column gr3-cell">
+              <div class="flex-row flex-justify-center">
+                <div class="playlists__img-wrap">
+                  <picture>
+                    <!-- 160x160 -->
+                    <source srcset="img/playlist/160_160/card3.avif" type="image/avif" media="(min-width: 480px)">
+                    <source srcset="img/playlist/160_160/card3.webp" type="image/webp" media="(min-width: 480px)">
+                    <source srcset="img/playlist/160_160/card3.jpg" type="image/jpeg" media="(min-width: 480px)">
+                    <!-- 200x130 -->
+                    <source srcset="img/playlist/200_130/card3.avif" type="image/avif" media="(min-width: 321px)">
+                    <source srcset="img/playlist/200_130/card3.webp" type="image/webp" media="(min-width: 321px)">
+                    <source srcset="img/playlist/200_130/card3.jpg" type="image/jpg" media="(min-width: 321px)">
+                    <!-- 112x112 -->
+                    <source srcset="img/playlist/112_112/card3.avif" type="image/avif" media="(max-width: 320px)">
+                    <source srcset="img/playlist/112_112/card3.webp" type="image/webp" media="(max-width: 320px)">
+                    <source srcset="img/playlist/112_112/card3.jpg" type="image/jpeg" media="(max-width: 320px)">
+                    <img class="playlists__img" src="img/playlist" alt="Motorama">
+                  </picture>
+                  <img src="img/playlist/svg/flag_ru.svg" alt="" class="playlists__flag">
+                </div>
+              </div>
+              <div class="flex-column playlists__text">
+                <h3 class="playlists__h3">Motorama</h3>
+                <span class="playlists__descr">Все синглы</span>
+              </div>
+            </li>
+            <li class="playlists__card flex-column gr3-cell">
+              <div class="flex-row flex-justify-center">
+                <div class="playlists__img-wrap">
+                  <picture>
+                    <!-- 160x160 -->
+                    <source srcset="img/playlist/160_160/card4.avif" type="image/avif" media="(min-width: 480px)">
+                    <source srcset="img/playlist/160_160/card4.webp" type="image/webp" media="(min-width: 480px)">
+                    <source srcset="img/playlist/160_160/card4.jpg" type="image/jpeg" media="(min-width: 480px)">
+                    <!-- 200x130 -->
+                    <source srcset="img/playlist/200_130/card4.avif" type="image/avif" media="(min-width: 321px)">
+                    <source srcset="img/playlist/200_130/card4.webp" type="image/webp" media="(min-width: 321px)">
+                    <source srcset="img/playlist/200_130/card4.jpg" type="image/jpg" media="(min-width: 321px)">
+                    <!-- 112x112 -->
+                    <source srcset="img/playlist/112_112/card4.avif" type="image/avif" media="(max-width: 320px)">
+                    <source srcset="img/playlist/112_112/card4.webp" type="image/webp" media="(max-width: 320px)">
+                    <source srcset="img/playlist/112_112/card4.jpg" type="image/jpeg" media="(max-width: 320px)">
+                    <img class="playlists__img" src="img/playlist" alt="Human Tetris">
+                  </picture>
+                  <img src="img/playlist/svg/flag_ru.svg" alt="" class="playlists__flag">
+                </div>
+              </div>
+              <div class="flex-column playlists__text">
+                <h3 class="playlists__h3">Human Tetris</h3>
+                <span class="playlists__descr">3 последних альбома</span>
+              </div>
+            </li>
+            <li class="playlists__card flex-column gr3-cell">
+              <div class="flex-row flex-justify-center">
+                <div class="playlists__img-wrap">
+                  <picture>
+                    <!-- 160x160 -->
+                    <source srcset="img/playlist/160_160/card5.avif" type="image/avif" media="(min-width: 480px)">
+                    <source srcset="img/playlist/160_160/card5.webp" type="image/webp" media="(min-width: 480px)">
+                    <source srcset="img/playlist/160_160/card5.jpg" type="image/jpeg" media="(min-width: 480px)">
+                    <!-- 200x130 -->
+                    <source srcset="img/playlist/200_130/card5.avif" type="image/avif" media="(min-width: 321px)">
+                    <source srcset="img/playlist/200_130/card5.webp" type="image/webp" media="(min-width: 321px)">
+                    <source srcset="img/playlist/200_130/card5.jpg" type="image/jpg" media="(min-width: 321px)">
+                    <!-- 112x112 -->
+                    <source srcset="img/playlist/112_112/card5.avif" type="image/avif" media="(max-width: 320px)">
+                    <source srcset="img/playlist/112_112/card5.webp" type="image/webp" media="(max-width: 320px)">
+                    <source srcset="img/playlist/112_112/card5.jpg" type="image/jpeg" media="(max-width: 320px)">
+                    <img class="playlists__img" src="img/playlist" alt="Буерак">
+                  </picture>
+                  <img src="img/playlist/svg/flag_ru.svg" alt="" class="playlists__flag">
+                </div>
+              </div>
+              <div class="flex-column playlists__text">
+                <h3 class="playlists__h3">Буерак</h3>
+                <span class="playlists__descr">Все EP</span>
+              </div>
+            </li>
+            <li class="playlists__card flex-column gr3-cell">
+              <div class="flex-row flex-justify-center">
+                <div class="playlists__img-wrap">
+                  <picture>
+                    <!-- 160x160 -->
+                    <source srcset="img/playlist/160_160/card6.avif" type="image/avif" media="(min-width: 480px)">
+                    <source srcset="img/playlist/160_160/card6.webp" type="image/webp" media="(min-width: 480px)">
+                    <source srcset="img/playlist/160_160/card6.jpg" type="image/jpeg" media="(min-width: 480px)">
+                    <!-- 200x130 -->
+                    <source srcset="img/playlist/200_130/card6.avif" type="image/avif" media="(min-width: 321px)">
+                    <source srcset="img/playlist/200_130/card6.webp" type="image/webp" media="(min-width: 321px)">
+                    <source srcset="img/playlist/200_130/card6.jpg" type="image/jpg" media="(min-width: 321px)">
+                    <!-- 112x112 -->
+                    <source srcset="img/playlist/112_112/card6.avif" type="image/avif" media="(max-width: 320px)">
+                    <source srcset="img/playlist/112_112/card6.webp" type="image/webp" media="(max-width: 320px)">
+                    <source srcset="img/playlist/112_112/card6.jpg" type="image/jpeg" media="(max-width: 320px)">
+                    <img class="playlists__img" src="img/playlist" alt="Июльские Дни">
+                  </picture>
+                  <img src="img/playlist/svg/flag_ru.svg" alt="" class="playlists__flag">
+                </div>
+              </div>
+              <div class="flex-column playlists__text">
+                <h3 class="playlists__h3">Июльские&shy; Дни</h3>
+                <span class="playlists__descr">Альбом «Колокол»</span>
+              </div>
+            </li>
+            <li class="playlists__card flex-column gr3-cell">
+              <div class="flex-row flex-justify-center">
+                <div class="playlists__img-wrap">
+                  <picture>
+                    <!-- 160x160 -->
+                    <source srcset="img/playlist/160_160/card7.avif" type="image/avif" media="(min-width: 480px)">
+                    <source srcset="img/playlist/160_160/card7.webp" type="image/webp" media="(min-width: 480px)">
+                    <source srcset="img/playlist/160_160/card7.jpg" type="image/jpeg" media="(min-width: 480px)">
+                    <!-- 200x130 -->
+                    <source srcset="img/playlist/200_130/card7.avif" type="image/avif" media="(min-width: 321px)">
+                    <source srcset="img/playlist/200_130/card7.webp" type="image/webp" media="(min-width: 321px)">
+                    <source srcset="img/playlist/200_130/card7.jpg" type="image/jpg" media="(min-width: 321px)">
+                    <!-- 112x112 -->
+                    <source srcset="img/playlist/112_112/card7.avif" type="image/avif" media="(max-width: 320px)">
+                    <source srcset="img/playlist/112_112/card7.webp" type="image/webp" media="(max-width: 320px)">
+                    <source srcset="img/playlist/112_112/card7.jpg" type="image/jpeg" media="(max-width: 320px)">
+                    <img class="playlists__img" src="img/playlist" alt="Joy Division">
+                  </picture>
+                  <img src="img/playlist/svg/flag_gb.svg" alt="" class="playlists__flag">
+                </div>
+              </div>
+              <div class="flex-column playlists__text">
+                <h3 class="playlists__h3">Joy Division</h3>
+                <span class="playlists__descr">Лучшее за всё время</span>
+              </div>
+            </li>
+            <li class="playlists__card flex-column gr3-cell">
+              <div class="flex-row flex-justify-center">
+                <div class="playlists__img-wrap">
+                  <picture>
+                    <!-- 160x160 -->
+                    <source srcset="img/playlist/160_160/card8.avif" type="image/avif" media="(min-width: 480px)">
+                    <source srcset="img/playlist/160_160/card8.webp" type="image/webp" media="(min-width: 480px)">
+                    <source srcset="img/playlist/160_160/card8.jpg" type="image/jpeg" media="(min-width: 480px)">
+                    <!-- 200x130 -->
+                    <source srcset="img/playlist/200_130/card8.avif" type="image/avif" media="(min-width: 321px)">
+                    <source srcset="img/playlist/200_130/card8.webp" type="image/webp" media="(min-width: 321px)">
+                    <source srcset="img/playlist/200_130/card8.jpg" type="image/jpg" media="(min-width: 321px)">
+                    <!-- 112x112 -->
+                    <source srcset="img/playlist/112_112/card8.avif" type="image/avif" media="(max-width: 320px)">
+                    <source srcset="img/playlist/112_112/card8.webp" type="image/webp" media="(max-width: 320px)">
+                    <source srcset="img/playlist/112_112/card8.jpg" type="image/jpeg" media="(max-width: 320px)">
+                    <img class="playlists__img" src="img/playlist" alt="The Cure">
+                  </picture>
+                  <img src="img/playlist/svg/flag_gb.svg" alt="" class="playlists__flag">
+                </div>
+              </div>
+              <div class="flex-column playlists__text">
+                <h3 class="playlists__h3">The Cure</h3>
+                <span class="playlists__descr">Лучшее за всё время</span>
+              </div>
+            </li>
+            <li class="playlists__card flex-column gr3-cell">
+              <div class="flex-row flex-justify-center">
+                <div class="playlists__img-wrap">
+                  <picture>
+                    <!-- 160x160 -->
+                    <source srcset="img/playlist/160_160/card9.avif" type="image/avif" media="(min-width: 480px)">
+                    <source srcset="img/playlist/160_160/card9.webp" type="image/webp" media="(min-width: 480px)">
+                    <source srcset="img/playlist/160_160/card9.jpg" type="image/jpeg" media="(min-width: 480px)">
+                    <!-- 200x130 -->
+                    <source srcset="img/playlist/200_130/card9.avif" type="image/avif" media="(min-width: 321px)">
+                    <source srcset="img/playlist/200_130/card9.webp" type="image/webp" media="(min-width: 321px)">
+                    <source srcset="img/playlist/200_130/card9.jpg" type="image/jpg" media="(min-width: 321px)">
+                    <!-- 112x112 -->
+                    <source srcset="img/playlist/112_112/card9.avif" type="image/avif" media="(max-width: 320px)">
+                    <source srcset="img/playlist/112_112/card9.webp" type="image/webp" media="(max-width: 320px)">
+                    <source srcset="img/playlist/112_112/card9.jpg" type="image/jpeg" media="(max-width: 320px)">
+                    <img class="playlists__img" src="img/playlist" alt="The Smiths">
+                  </picture>
+                  <img src="img/playlist/svg/flag_gb.svg" alt="" class="playlists__flag">
+                </div>
+              </div>
+              <div class="flex-column playlists__text">
+                <h3 class="playlists__h3">The Smiths</h3>
+                <span class="playlists__descr">Период 1984–1988</span>
+              </div>
+            </li>
+            <li class="playlists__card flex-column gr3-cell">
+              <div class="flex-row flex-justify-center">
+                <div class="playlists__img-wrap">
+                  <picture>
+                    <!-- 160x160 -->
+                    <source srcset="img/playlist/160_160/card10.avif" type="image/avif" media="(min-width: 480px)">
+                    <source srcset="img/playlist/160_160/card10.webp" type="image/webp" media="(min-width: 480px)">
+                    <source srcset="img/playlist/160_160/card10.jpg" type="image/jpeg" media="(min-width: 480px)">
+                    <!-- 200x130 -->
+                    <source srcset="img/playlist/200_130/card10.avif" type="image/avif" media="(min-width: 321px)">
+                    <source srcset="img/playlist/200_130/card10.webp" type="image/webp" media="(min-width: 321px)">
+                    <source srcset="img/playlist/200_130/card10.jpg" type="image/jpg" media="(min-width: 321px)">
+                    <!-- 112x112 -->
+                    <source srcset="img/playlist/112_112/card10.avif" type="image/avif" media="(max-width: 320px)">
+                    <source srcset="img/playlist/112_112/card10.webp" type="image/webp" media="(max-width: 320px)">
+                    <source srcset="img/playlist/112_112/card10.jpg" type="image/jpeg" media="(max-width: 320px)">
+                    <img class="playlists__img" src="img/playlist" alt="New Order">
+                  </picture>
+                  <img src="img/playlist/svg/flag_gb.svg" alt="" class="playlists__flag">
+                </div>
+              </div>
+              <div class="flex-column playlists__text">
+                <h3 class="playlists__h3">New Order</h3>
+                <span class="playlists__descr">Хиты</span>
+              </div>
+            </li>
+            <li class="playlists__card flex-column gr3-cell">
+              <div class="flex-row flex-justify-center">
+                <div class="playlists__img-wrap">
+                  <picture>
+                    <!-- 160x160 -->
+                    <source srcset="img/playlist/160_160/card11.avif" type="image/avif" media="(min-width: 480px)">
+                    <source srcset="img/playlist/160_160/card11.webp" type="image/webp" media="(min-width: 480px)">
+                    <source srcset="img/playlist/160_160/card11.jpg" type="image/jpeg" media="(min-width: 480px)">
+                    <!-- 200x130 -->
+                    <source srcset="img/playlist/200_130/card11.avif" type="image/avif" media="(min-width: 321px)">
+                    <source srcset="img/playlist/200_130/card11.webp" type="image/webp" media="(min-width: 321px)">
+                    <source srcset="img/playlist/200_130/card11.jpg" type="image/jpg" media="(min-width: 321px)">
+                    <!-- 112x112 -->
+                    <source srcset="img/playlist/112_112/card11.avif" type="image/avif" media="(max-width: 320px)">
+                    <source srcset="img/playlist/112_112/card11.webp" type="image/webp" media="(max-width: 320px)">
+                    <source srcset="img/playlist/112_112/card11.jpg" type="image/jpeg" media="(max-width: 320px)">
+                    <img class="playlists__img" src="img/playlist" alt="Bauhaus">
+                  </picture>
+                  <img src="img/playlist/svg/flag_gb.svg" alt="" class="playlists__flag">
+                </div>
+              </div>
+              <div class="flex-column playlists__text">
+                <h3 class="playlists__h3">Bauhaus</h3>
+                <span class="playlists__descr">Все синглы</span>
+              </div>
+            </li>
+            <li class="playlists__card flex-column gr3-cell">
+              <div class="flex-row flex-justify-center">
+                <div class="playlists__img-wrap">
+                  <picture>
+                    <!-- 160x160 -->
+                    <source srcset="img/playlist/160_160/card12.avif" type="image/avif" media="(min-width: 480px)">
+                    <source srcset="img/playlist/160_160/card12.webp" type="image/webp" media="(min-width: 480px)">
+                    <source srcset="img/playlist/160_160/card12.jpg" type="image/jpeg" media="(min-width: 480px)">
+                    <!-- 200x130 -->
+                    <source srcset="img/playlist/200_130/card12.avif" type="image/avif" media="(min-width: 321px)">
+                    <source srcset="img/playlist/200_130/card12.webp" type="image/webp" media="(min-width: 321px)">
+                    <source srcset="img/playlist/200_130/card12.jpg" type="image/jpg" media="(min-width: 321px)">
+                    <!-- 112x112 -->
+                    <source srcset="img/playlist/112_112/card12.avif" type="image/avif" media="(max-width: 320px)">
+                    <source srcset="img/playlist/112_112/card12.webp" type="image/webp" media="(max-width: 320px)">
+                    <source srcset="img/playlist/112_112/card12.jpg" type="image/jpeg" media="(max-width: 320px)">
+                    <img class="playlists__img" src="img/playlist" alt="Gang Of Four">
+                  </picture>
+                  <img src="img/playlist/svg/flag_gb.svg" alt="" class="playlists__flag">
+                </div>
+              </div>
+              <div class="flex-column playlists__text">
+                <h3 class="playlists__h3">Gang Of Four</h3>
+                <span class="playlists__descr">3 последних альбома</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </section>
+      <section class="adv">
+        <div class="container">
+          <div class="adv__items flex-column flex-nowrap flex-justify-spb gutters-v1">
+            <div class="adv__radio flex-column flex-justify-center">
+              <div class="adv__radio-wrap">
+                <picture>
+                  <!-- 640x562 -->
+                  <source srcset="img/adv/640_562/radio.avif" type="image/avif" media="(min-width: 1025px)">
+                  <source srcset="img/adv/640_562/radio.webp" type="image/webp" media="(min-width: 1025px)">
+                  <source srcset="img/adv/640_562/radio.png"  type="image/png" media="(min-width: 1025px)">
+                  <!-- 397x349 -->
+                  <source srcset="img/adv/397_349/radio.avif" type="image/avif" media="(min-width: 769px)">
+                  <source srcset="img/adv/397_349/radio.webp" type="image/webp" media="(min-width: 769px)">
+                  <source srcset="img/adv/397_349/radio.png" type="image/png" media="(min-width: 769px)">
+                  <!-- 540x474 -->
+                  <source srcset="img/adv/540_474/radio.avif" type="image/avif" media="(min-width: 321px)">
+                  <source srcset="img/adv/540_474/radio.webp" type="image/webp" media="(min-width: 321px)">
+                  <source srcset="img/adv/540_474/radio.png" type="image/png" media="(min-width: 321px)">
+                  <!-- 256x225 -->
+                  <source srcset="img/adv/256_225/radio.avif" type="image/avif" media="(max-width: 320px)">
+                  <source srcset="img/adv/256_225/radio.webp" type="image/webp" media="(max-width: 320px)">
+                  <source srcset="img/adv/256_225/radio.png" type="image/png" media="(max-width: 320px)">
+                  <img src="img/adv/" alt="Купить радио-приемник V-Wave">
+                </picture>
+                <img src="img/adv/svg/new.svg" alt="" class="adv__radio-label">
+              </div>
+            </div>
+            <div class="adv__info flex-column">
+              <div class="adv__header">
+                <h2 class="adv__h2">
+                  Будь с нами на одной волне!
+                </h2>
+              </div>
+              <p class="adv__p">
+                Друзья, рады представить вам продукт нашего производства! Да-да, несмотря на то, что мы только начали свой путь радиовещателей, нам хочется, чтобы вы могли как следует нас расслышать:)
+              </p>
+              <p class="adv__p">
+                Итак, встречайте! Портативный радиоприёмник-колонка W-Wave 1.0 xm. Тщательный подбор всех делатей, ручная сборка, качественный звук. Пока доступно только 60 штук в 3 цветах, но мы активно трудимся над новыми партиями и дизайном. Спешите приобрести!
+              </p>
+              <span class="adv__price">
+                2 800 ₽
+              </span>
+              <div class="adv__button-wrap">
+                <a href="#" class="adv__button">
+                  Купить на Яндекс.Маркет
+                </a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-pd about">
+      <div class="container">
+        <div class="flex-row flex-justify-spb gutters-v1 about__row1">
+          <div class="flex-column about__descr">
+            <h2 class="about__h2">
+              О нас
+            </h2>
+            <span class="about__hello">
+              Приём-приём! Как слышно? Мы уже в эфире? Отлично, поехали!
+            </span>
+            <p class="about__text">
+              Друзья, мы будем очень рады, если вы поможете стать нам лучше. Нам важен каждый слушатель, поэтому вы можете поделиться обратной связью о наших предеачах, темах, подборках и вообще обо всём! Это можно сделать либо написав нам в форме ниже, либо кликнув на наши соцсети в подвале сайта. Спасибо! Услышимся!:)
+            </p>
+          </div>
+          <div class="flex-row gutters-v1 about__svg">
+            <svg class="about__spiral-v" width="162" height="292" viewBox="0 0 162 292" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.5" d="M103.536 1C46.9066 1 1 15.5154 1 33.4211C1 51.3268 46.9066 65.8423 103.536 65.8423C135.272 65.8423 161 59.6977 161 52.118C161 44.5383 135.272 38.3937 103.536 38.3937C46.9066 38.3937 1 52.9091 1 70.8148C1 88.7206 46.9066 103.236 103.536 103.236C135.272 103.236 161 97.0916 161 89.5117C161 81.9319 135.272 75.7874 103.536 75.7874C46.9066 75.7874 1 90.3919 1 108.407C1 126.423 46.9066 141.028 103.536 141.028C135.272 141.028 161 134.883 161 127.303C161 119.723 135.272 113.579 103.536 113.579C46.9066 113.579 1 128.094 1 146C1 163.906 46.9066 178.421 103.536 178.421C135.272 178.421 161 172.277 161 164.697C161 157.117 135.272 150.972 103.536 150.972C46.9066 150.972 1 165.488 1 183.394C1 201.3 46.9066 215.815 103.536 215.815C135.272 215.815 161 209.67 161 202.091C161 194.511 135.272 188.366 103.536 188.366C46.9066 188.366 1 202.882 1 220.787C1 238.693 46.9066 253.209 103.536 253.209C135.272 253.209 161 247.064 161 239.484C161 231.905 135.272 225.76 103.536 225.76C46.9066 225.76 1 240.364 1 258.38C1 276.395 46.9066 291 103.536 291" stroke="#A1A6B4" stroke-linecap="round"/>
+            </svg>
+            <svg class="about__spiral-h" width="513" height="114" viewBox="0 0 513 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.5" d="M377.276 72.88C377.276 33.343 366.862 1.29221 354.015 1.29221C341.169 1.29221 330.754 33.343 330.754 72.88C330.754 95.0376 335.163 113 340.601 113C346.039 113 350.448 95.0376 350.448 72.88C350.448 33.343 340.034 1.29221 327.187 1.29221C314.34 1.29221 303.926 33.343 303.926 72.88C303.926 95.0376 308.334 113 313.773 113C319.211 113 323.619 95.0376 323.619 72.88C323.619 33.343 313.141 1.29221 300.216 1.29221C287.29 1.29221 276.812 33.343 276.812 72.88C276.812 95.0376 281.22 113 286.659 113C292.097 113 296.505 95.0376 296.505 72.88C296.505 33.343 286.091 1.29221 273.244 1.29221C260.398 1.29221 249.984 33.343 249.984 72.88C249.984 95.0376 254.392 113 259.83 113C265.268 113 269.677 95.0376 269.677 72.88C269.677 33.343 259.262 1.29221 246.415 1.29221C233.569 1.29221 223.155 33.343 223.155 72.88C223.155 95.0376 227.564 113 233.001 113C238.439 113 242.848 95.0376 242.848 72.88C242.848 33.343 232.433 1.29221 219.587 1.29221C206.741 1.29221 196.326 33.343 196.326 72.88C196.326 95.0376 200.735 113 206.173 113C211.611 113 216.019 95.0376 216.019 72.88C216.019 33.343 205.541 1.2922 192.616 1.2922C179.691 1.2922 169.212 33.343 169.212 72.88M512 72.88C512 33.343 501.586 1.29221 488.739 1.29221C475.892 1.29221 465.478 33.343 465.478 72.88C465.478 95.0376 469.887 113 475.325 113C480.763 113 485.171 95.0376 485.171 72.88C485.171 33.343 474.757 1.29221 461.911 1.29221C449.064 1.29221 438.649 33.343 438.649 72.88C438.649 95.0376 443.058 113 448.496 113C453.934 113 458.343 95.0376 458.343 72.88C458.343 33.343 447.865 1.29221 434.939 1.29221C422.014 1.29221 411.535 33.343 411.535 72.88C411.535 95.0376 415.944 113 421.382 113C426.821 113 431.228 95.0376 431.228 72.88C431.228 33.343 420.815 1.29221 407.968 1.29221C395.121 1.29221 384.707 33.343 384.707 72.88C384.707 95.0376 389.115 113 394.553 113C399.992 113 404.4 95.0376 404.4 72.88C404.4 33.343 393.986 1.29221 381.139 1.29221C368.292 1.29221 357.878 33.343 357.878 72.88C357.878 95.0376 362.287 113 367.725 113C373.163 113 377.572 95.0376 377.572 72.88C377.572 33.343 367.157 1.29221 354.311 1.29221C341.464 1.29221 331.05 33.343 331.05 72.88C331.05 95.0376 335.458 113 340.897 113C346.334 113 350.743 95.0376 350.743 72.88C350.743 33.343 340.265 1.2922 327.34 1.2922C314.414 1.2922 303.936 33.343 303.936 72.88M81.0642 72.5878C81.0642 33.0508 70.65 1.00001 57.8033 1.00001C44.9567 1.00001 34.5423 33.0508 34.5423 72.5878C34.5423 94.7454 38.9508 112.708 44.389 112.708C49.8271 112.708 54.2357 94.7454 54.2357 72.5878C54.2357 33.0508 43.8214 1.00001 30.9747 1.00001C18.128 1.00001 7.7134 33.0507 7.7134 72.5878C7.7134 94.7454 12.1221 112.708 17.5604 112.708C22.9986 112.708 27.4071 94.7454 27.4071 72.5878C27.4071 33.0508 16.9289 1.00001 4.00348 1C-8.9219 1 -19.4005 33.0507 -19.4005 72.5878C-19.4005 94.7454 -14.9918 112.708 -9.55346 112.708C-4.11512 112.708 0.292723 94.7454 0.292724 72.5878C0.292726 33.0507 -10.1211 1 -22.9679 1C-35.8146 1 -46.2285 33.0507 -46.2285 72.5878C-46.2285 94.7454 -41.8206 112.708 -36.3823 112.708C-30.944 112.708 -26.5353 94.7454 -26.5353 72.5878C-26.5353 33.0507 -36.95 1 -49.7967 1C-62.6434 1 -73.0573 33.0507 -73.0573 72.5878C-73.0573 94.7454 -68.6486 112.708 -63.2111 112.708C-57.7728 112.708 -53.3641 94.7454 -53.3641 72.5878C-53.3641 33.0507 -63.7788 1 -76.6247 1C-89.4714 1 -99.8861 33.0507 -99.8861 72.5878C-99.8861 94.7454 -95.4774 112.708 -90.0391 112.708C-84.6016 112.708 -80.1929 94.7454 -80.1929 72.5878C-80.1929 33.0507 -90.6707 1 -103.596 1C-116.521 0.999999 -127 33.0507 -127 72.5878M215.788 72.5878C215.788 33.0508 205.374 1.00001 192.527 1.00001C179.68 1.00001 169.266 33.0508 169.266 72.5878C169.266 94.7454 173.674 112.708 179.113 112.708C184.551 112.708 188.959 94.7454 188.959 72.5878C188.959 33.0508 178.545 1.00001 165.698 1.00001C152.852 1.00001 142.437 33.0507 142.437 72.5878C142.437 94.7454 146.846 112.708 152.284 112.708C157.722 112.708 162.131 94.7454 162.131 72.5878C162.131 33.0508 151.652 1.00001 138.727 1C125.802 1 115.323 33.0507 115.323 72.5878C115.323 94.7454 119.732 112.708 125.17 112.708C130.608 112.708 135.016 94.7454 135.016 72.5878C135.016 33.0507 124.602 1 111.756 1C98.909 1 88.4951 33.0507 88.4951 72.5878C88.4951 94.7454 92.9029 112.708 98.3413 112.708C103.78 112.708 108.188 94.7454 108.188 72.5878C108.188 33.0507 97.7736 1 84.9269 1C72.0802 1 61.6663 33.0507 61.6663 72.5878C61.6663 94.7454 66.075 112.708 71.5125 112.708C76.9508 112.708 81.3595 94.7454 81.3595 72.5878C81.3595 33.0507 70.9448 1 58.0989 1C45.2521 1 34.8375 33.0507 34.8375 72.5878C34.8375 94.7454 39.2461 112.708 44.6845 112.708C50.122 112.708 54.5307 94.7454 54.5307 72.5878C54.5307 33.0507 44.0529 1 31.1275 1C18.2022 0.999999 7.72359 33.0507 7.72359 72.5878" stroke="#A1A6B4" stroke-linecap="round"/>
+            </svg>
+            <svg class="about__dawn" width="255" height="255" viewBox="0 0 255 255" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path id="Dawn" opacity="0.5" d="M127.5 0L127.525 127.375L176.292 9.70532L127.571 127.394L217.656 37.3439L127.606 127.429L245.295 78.7076L127.625 127.475L255 127.5L127.625 127.525L245.295 176.292L127.606 127.571L217.656 217.656L127.571 127.606L176.292 245.295L127.525 127.625L127.5 255L127.475 127.625L78.7076 245.295L127.429 127.606L37.3439 217.656L127.394 127.571L9.70532 176.292L127.375 127.525L0 127.5L127.375 127.475L9.70532 78.7076L127.394 127.429L37.3439 37.3439L127.429 127.394L78.7076 9.70532L127.475 127.375L127.5 0Z" stroke="#A1A6B4"/>
+            </svg>
+          </div>
+        </div>
+        <ul class="gr4-grid grid-row-auto list-reset about__cards">
+          <li class="gr4-cell flex-column gutters-v1 about__card">
+            <picture>
+              <!-- 255x255 -->
+              <source srcset="img/about/255_255/card1.avif" type="image/avif" media="(min-width: 1025px)">
+              <source srcset="img/about/255_255/card1.webp" type="image/webp" media="(min-width: 1025px)">
+              <source srcset="img/about/255_255/card1.jpg" type="image/jpeg" media="(min-width: 1025px)">
+              <!-- 397x255 -->
+              <source srcset="img/about/397_255/card1.avif" type="image/avif" media="(min-width: 769px)">
+              <source srcset="img/about/397_255/card1.webp" type="image/webp" media="(min-width: 769px)">
+              <source srcset="img/about/397_255/card1.jpg" type="image/jpeg" media="(min-width: 769px)">
+              <!-- 255x255 -->
+              <source srcset="img/about/255_255/card1.avif" type="image/avif" media="(max-width: 768px)">
+              <source srcset="img/about/255_255/card1.webp" type="image/webp" media="(max-width: 768px)">
+              <source srcset="img/about/255_255/card1.jpg" type="image/jpeg" media="(max-width: 768px)">
+              <img src="img/about/" alt="">
+            </picture>
+            <div class="about__text">
+              <h3 class="about__h3">
+                Дмитрий Гутенберг
+              </h3>
+              <p class="about__p">
+                Эксперт (ну, почти) по всем вопросам (почти)
+              </p>
+            </div>
+          </li>
+          <li class="gr4-cell flex-column gutters-v1 about__card">
+            <picture>
+              <!-- 255x255 -->
+              <source srcset="img/about/255_255/card2.avif" type="image/avif" media="(min-width: 1025px)">
+              <source srcset="img/about/255_255/card2.webp" type="image/webp" media="(min-width: 1025px)">
+              <source srcset="img/about/255_255/card2.jpg" type="image/jpeg" media="(min-width: 1025px)">
+              <!-- 397x255 -->
+              <source srcset="img/about/397_255/card2.avif" type="image/avif" media="(min-width: 769px)">
+              <source srcset="img/about/397_255/card2.webp" type="image/webp" media="(min-width: 769px)">
+              <source srcset="img/about/397_255/card2.jpg" type="image/jpeg" media="(min-width: 769px)">
+              <!-- 255x255 -->
+              <source srcset="img/about/255_255/card2.avif" type="image/avif" media="(max-width: 768px)">
+              <source srcset="img/about/255_255/card2.webp" type="image/webp" media="(max-width: 768px)">
+              <source srcset="img/about/255_255/card2.jpg" type="image/jpeg" media="(max-width: 768px)">
+              <img src="img/about/" alt="">
+            </picture>
+            <div class="about__text">
+              <h3 class="about__h3">
+                Анна Васильева
+              </h3>
+              <p class="about__p">
+                Как я здесь оказалась? А главное — зачем?
+              </p>
+            </div>
+          </li>
+          <li class="gr4-cell flex-column gutters-v1 about__card">
+            <picture>
+              <!-- 255x255 -->
+              <source srcset="img/about/255_255/card3.avif" type="image/avif" media="(min-width: 1025px)">
+              <source srcset="img/about/255_255/card3.webp" type="image/webp" media="(min-width: 1025px)">
+              <source srcset="img/about/255_255/card3.jpg" type="image/jpeg" media="(min-width: 1025px)">
+              <!-- 397x255 -->
+              <source srcset="img/about/397_255/card3.avif" type="image/avif" media="(min-width: 769px)">
+              <source srcset="img/about/397_255/card3.webp" type="image/webp" media="(min-width: 769px)">
+              <source srcset="img/about/397_255/card3.jpg" type="image/jpeg" media="(min-width: 769px)">
+              <!-- 255x255 -->
+              <source srcset="img/about/255_255/card3.avif" type="image/avif" media="(max-width: 768px)">
+              <source srcset="img/about/255_255/card3.webp" type="image/webp" media="(max-width: 768px)">
+              <source srcset="img/about/255_255/card3.jpg" type="image/jpeg" media="(max-width: 768px)">
+              <img src="img/about/" alt="">
+            </picture>
+            <div class="about__text">
+              <h3 class="about__h3">
+                Пётр Дмитриевский
+              </h3>
+              <p class="about__p">
+                Господа! Внимание! Благодарю за внимание!
+              </p>
+            </div>
+          </li>
+          <li class="gr4-cell flex-column gutters-v1 about__card">
+            <picture>
+              <!-- 255x255 -->
+              <source srcset="img/about/255_255/card4.avif" type="image/avif" media="(min-width: 1025px)">
+              <source srcset="img/about/255_255/card4.webp" type="image/webp" media="(min-width: 1025px)">
+              <source srcset="img/about/255_255/card4.jpg" type="image/jpeg" media="(min-width: 1025px)">
+              <!-- 397x255 -->
+              <source srcset="img/about/397_255/card4.avif" type="image/avif" media="(min-width: 769px)">
+              <source srcset="img/about/397_255/card4.webp" type="image/webp" media="(min-width: 769px)">
+              <source srcset="img/about/397_255/card4.jpg" type="image/jpeg" media="(min-width: 769px)">
+              <!-- 255x255 -->
+              <source srcset="img/about/255_255/card4.avif" type="image/avif" media="(max-width: 768px)">
+              <source srcset="img/about/255_255/card4.webp" type="image/webp" media="(max-width: 768px)">
+              <source srcset="img/about/255_255/card4.jpg" type="image/jpeg" media="(max-width: 768px)">
+              <img src="img/about/" alt="">
+            </picture>
+            <div class="about__text">
+              <h3 class="about__h3">
+                Татьяна Флеганова
+              </h3>
+              <p class="about__p">
+                Одна я в пальто стою красивая, а вокруг…
+              </p>
+            </div>
+          </li>
+        </ul>
+        <form method="POST" action="https://jsonplaceholder.typicode.com/posts" class="about__form flex-column gutters-v1">
+          <textarea name="message" cols="1" rows="5" class="about__form-row1 about__form-common" placeholder="Что скажете?"></textarea>
+          <div class="about__form-row2 flex-row flex-wrap flex-justify-spb gutters-v1">
+            <input type="text" name="name" class="about__form-edit about__form-common about__form-input" placeholder="Имя" required>
+            <input type="email" name="email" class="about__form-edit about__form-common about__form-input" placeholder="Email" required>
+          </div>
+          <button type="submit" class="form__button">Отправить</button>
+          <div>
+            <input id="confirm-id" type="checkbox" class="form__confirm">
+            <label for="confirm-id" class="form__label">Согласен на обработку персональных данных</label>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="section-pd footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__left flex-column">
+          <a href="#" class="footer__logo">
+            <img src="img/footer/svg/logo.svg" alt="Логотип компании">
+          </a>
+          <ul class="flex-row footer__social list-reset">
+            <li>
+              <a href="#">
+                <img class="footer__vk" src="img/footer/svg/yt.svg" alt="Мы в youtube">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img class="footer__ok" src="img/footer/svg/ok.svg" alt="Мы в одноклассниках">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img class="footer__vk" src="img/footer/svg/vk.svg" alt="Мы в контакте">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- <nav> -->
+          <ul class="footer__right flex-column list-reset">
+            <li class="footer__menu-item">
+              Подкасты
+            </li>
+            <li class="footer__menu-item">
+              Передачи
+            </li>
+            <li class="footer__menu-item">
+              Гости
+            </li>
+            <li class="footer__menu-item">
+              Плейлисты
+            </li>
+            <li class="footer__menu-item">
+              Сетка
+            </li>
+            <li class="footer__menu-item">
+              О&nbsp;нас
+            </li>
+            <li class="footer__menu-item">
+              Новости
+            </li>
+            <li class="footer__menu-item">
+              Блоги
+            </li>
+            <li class="footer__menu-item">
+              Топы
+            </li>
+          </ul>
+        <!-- </nav> -->
+      </div>
+    </div>
+  </footer>
+  <div class="footer__bottom flex-row flex-justify-center flex-align-center">
+    <span class="footer__bottom-text">W-WAVE ® 2023</span>
+  </div>
+</body>
+</html>
