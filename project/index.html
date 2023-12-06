@@ -4,44 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>W-Wave radio</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/init.css">
   <link rel="stylesheet" href="css/helpers.css">
   <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/flex-grid-30x30.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/flex-grid_v3.css">
   <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/states.css">
 </head>
 <body>
   <header class="header">
-    <div class="container header__container">
-      <div class="header__items flex-column">
-        <a href="#" class="header__logo">
-          <img src="img/header/svg/logo.svg" alt="Логотип радио V-Wave">
-        </a>
+    <div class="container header__wrap">
+      <div class="flex-column header__items">
+        <div class="header__logo-wrap">
+          <a href="#" class="header__logo" tabindex="-1">
+            <img src="img/header/svg/logo.svg" alt="Логотип радио W-Wave">
+          </a>
+        </div>
         <nav>
-          <ul class="header__nav flex-row flex-justify-spb list-reset">
+          <ul class="font-Muller font-400 flex-row flex-justify-spb list-reset header__nav">
             <li>
-              Подкасты
+              <a href="#podcasts-id" class="header__nav-item">Подкасты</a>
             </li>
             <li>
-              Передачи
+              <a href="#broadcast-id" class="header__nav-item">Передачи</a>
             </li>
             <li>
-              Гости
+              <a href="#guests-id" class="header__nav-item">Гости</a>
             </li>
             <li>
-              Плейлисты
+              <a href="#playlists-id" class="header__nav-item">Плейлисты</a>
             </li>
             <li>
-              О&nbsp;нас
+              <a href="#about-id" class="header__nav-item">О&nbsp;нас</a>
             </li>
           </ul>
         </nav>
-        <svg class="header__search" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M21 21L16.65 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+        <button class="header__search" aria-label="поиск на сайте">
+          <svg class="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M21 21L16.65 16.65" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
       </div>
     </div>
     <div class="header__borders"></div>
@@ -51,223 +57,257 @@
       <div class="container hero__bkg">
         <div class="flex-column hero__items">
           <div class="hero__descr">
-            <h1 class="hero__h1">
-              <span class="hero__h1-p1">Радио</span>&nbsp;<span class="hero__h1-p2">W-Wave</span>
+            <h1 class="font-Muller font-lh-100pr hero__h1">
+              <span class="font-Muller font-700 hero__h1-p1">Радио</span>&nbsp;<span class="font-Muller font-400 font-st-italic hero__h1-p2">W-Wave</span>
             </h1>
-            <p class="hero__hello">
+            <p class="font-Muller font-400 font-lh-150pr hero__hello">
               Привет, на связи W-Wave! Раньше мы были изданием, а теперь пробуем себя в разоворном жанре. Говорим о музыке, политике, истории, науке и культуре. Здесь, помимо прямого эфира — архив передач и многое другое:)
             </p>
           </div>
-          <button class="hero__listen-btn">Слушать эфир</button>
+          <button class="font-Muller font-500 hero__listen-btn">Слушать эфир</button>
         </div>
       </div>
     </section>
-    <section class="section-pd podcasts">
+    <section class="section-pd podcasts" id="podcasts-id">
       <div class="container">
         <h2 class="podcasts__h2">Подкасты</h2>
         <ul class="gr1-grid grid-row-auto list-reset podcasts__cards">
-          <li class="podcasts__card flex-column gr1-cell">
+          <li class="flex-column gr1-cell podcasts__card">
             <div class="podcasts__img-wrap">
               <div class="podcasts__img">
                 <picture>
                   <!-- 112x140 -->
-                  <source srcset="img/podcasts/112_140/card1.avif" type="image/avif" media="(min-width: 321px)">
-                  <source srcset="img/podcasts/112_140/card1.webp" type="image/webp" media="(min-width: 321px)">
-                  <source srcset="img/podcasts/112_140/card1.jpg" type="image/jpeg" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/112_140/card1.avif" type="image/avif" media="(min-width: 383px)">
+                  <source srcset="img/podcasts/112_140/card1.webp" type="image/webp" media="(min-width: 383px)">
+                  <source srcset="img/podcasts/112_140/card1.jpg" type="image/jpeg" media="(min-width: 383px)">
+                  <!-- 318x140 -->
+                  <source srcset="img/podcasts/318_140/card1.avif" type="image/avif" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/318_140/card1.webp" type="image/webp" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/318_140/card1.jpg" type="image/jpeg" media="(min-width: 321px)">
                   <!-- 256x72 -->
                   <source srcset="img/podcasts/256_72/card1.avif" type="image/avif" media="(max-width: 320px)">
                   <source srcset="img/podcasts/256_72/card1.webp" type="image/webp" media="(max-width: 320px)">
                   <source srcset="img/podcasts/256_72/card1.jpg" type="image/jpeg" media="(max-width: 320px)">
                   <img src="img/podcasts/" alt="">
                 </picture>
-                <time class="podcasts__date" datetime="2023-06-14">14&nbsp;июня</time>
+                <time class="font-Muller font-400 podcasts__date" datetime="2023-06-14">14&nbsp;июня</time>
               </div>
             </div>
-            <div class="podcasts__descr flex-column">
-              <time class="podcasts__time" datetime="15:43">15:43</time>
+            <a class="flex-column podcasts__descr owner-size-click" href="#">
+              <time class="font-Muller font-400 podcasts__time" datetime="15:43">15:43</time>
               <h3 class="podcasts__h3">Европа. XIX век</h3>
-              <span class="podcasts__author">Дмитрий Гутенберг</span>
-            </div>
+              <span class="font-Muller font-400 podcasts__author">Дмитрий Гутенберг</span>
+            </a>
           </li>
-          <li class="podcasts__card flex-column gr1-cell">
+          <li class="flex-column gr1-cell podcasts__card">
             <div class="podcasts__img-wrap">
               <div class="podcasts__img">
                 <picture>
                   <!-- 112x140 -->
-                  <source srcset="img/podcasts/112_140/card2.avif" type="image/avif" media="(min-width: 321px)">
-                  <source srcset="img/podcasts/112_140/card2.webp" type="image/webp" media="(min-width: 321px)">
-                  <source srcset="img/podcasts/112_140/card2.jpg" type="image/jpeg" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/112_140/card2.avif" type="image/avif" media="(min-width: 383px)">
+                  <source srcset="img/podcasts/112_140/card2.webp" type="image/webp" media="(min-width: 383px)">
+                  <source srcset="img/podcasts/112_140/card2.jpg" type="image/jpeg" media="(min-width: 383px)">
+                  <!-- 318x140 -->
+                  <source srcset="img/podcasts/318_140/card2.avif" type="image/avif" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/318_140/card2.webp" type="image/webp" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/318_140/card2.jpg" type="image/jpeg" media="(min-width: 321px)">
                   <!-- 256x72 -->
                   <source srcset="img/podcasts/256_72/card2.avif" type="image/avif" media="(max-width: 320px)">
                   <source srcset="img/podcasts/256_72/card2.webp" type="image/webp" media="(max-width: 320px)">
                   <source srcset="img/podcasts/256_72/card2.jpg" type="image/jpeg" media="(max-width: 320px)">
                   <img src="img/podcasts/" alt="">
                 </picture>
-                <time class="podcasts__date" datetime="2023-06-11">11&nbsp;июня</time>
+                <time class="font-Muller font-400 podcasts__date" datetime="2023-06-11">11&nbsp;июня</time>
               </div>
             </div>
-            <div class="podcasts__descr flex-column">
-              <time class="podcasts__time" datetime="5:32">5:32</time>
+            <a class="flex-column podcasts__descr owner-size-click" href="#">
+              <time class="font-Muller font-400 podcasts__time" datetime="5:32">5:32</time>
               <h3 class="podcasts__h3">О музыке</h3>
-              <span class="podcasts__author">Дмитрий Гутенберг</span>
-            </div>
+              <span class="font-Muller font-400 podcasts__author">Дмитрий Гутенберг</span>
+            </a>
           </li>
-          <li class="podcasts__card flex-column gr1-cell">
+          <li class="flex-column gr1-cell podcasts__card">
             <div class="podcasts__img-wrap">
               <div class="podcasts__img">
                 <picture>
                   <!-- 112x140 -->
-                  <source srcset="img/podcasts/112_140/card3.avif" type="image/avif" media="(min-width: 321px)">
-                  <source srcset="img/podcasts/112_140/card3.webp" type="image/webp" media="(min-width: 321px)">
-                  <source srcset="img/podcasts/112_140/card3.jpg" type="image/jpeg" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/112_140/card3.avif" type="image/avif" media="(min-width: 383px)">
+                  <source srcset="img/podcasts/112_140/card3.webp" type="image/webp" media="(min-width: 383px)">
+                  <source srcset="img/podcasts/112_140/card3.jpg" type="image/jpeg" media="(min-width: 383px)">
+                  <!-- 318x140 -->
+                  <source srcset="img/podcasts/318_140/card3.avif" type="image/avif" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/318_140/card3.webp" type="image/webp" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/318_140/card3.jpg" type="image/jpeg" media="(min-width: 321px)">
                   <!-- 256x72 -->
                   <source srcset="img/podcasts/256_72/card3.avif" type="image/avif" media="(max-width: 320px)">
                   <source srcset="img/podcasts/256_72/card3.webp" type="image/webp" media="(max-width: 320px)">
                   <source srcset="img/podcasts/256_72/card3.jpg" type="image/jpeg" media="(max-width: 320px)">
                   <img src="img/podcasts/" alt="">
                 </picture>
-                <time class="podcasts__date" datetime="2023-06-08">8&nbsp;июня</time>
+                <time class="font-Muller font-400 podcasts__date" datetime="2023-06-08">8&nbsp;июня</time>
               </div>
             </div>
-            <div class="podcasts__descr flex-column">
-              <time class="podcasts__time" datetime="8:54">8:54</time>
+            <a class="flex-column podcasts__descr owner-size-click" href="#">
+              <time class="font-Muller font-400 podcasts__time" datetime="8:54">8:54</time>
               <h3 class="podcasts__h3">Люди сегодня</h3>
-              <span class="podcasts__author">Анна Васильева</span>
-            </div>
+              <span class="font-Muller font-400 podcasts__author">Анна Васильева</span>
+            </a>
           </li>
-          <li class="podcasts__card flex-column gr1-cell">
+          <li class="flex-column gr1-cell podcasts__card">
             <div class="podcasts__img-wrap">
               <div class="podcasts__img">
                 <picture>
                   <!-- 112x140 -->
-                  <source srcset="img/podcasts/112_140/card4.avif" type="image/avif" media="(min-width: 321px)">
-                  <source srcset="img/podcasts/112_140/card4.webp" type="image/webp" media="(min-width: 321px)">
-                  <source srcset="img/podcasts/112_140/card4.jpg" type="image/jpeg" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/112_140/card4.avif" type="image/avif" media="(min-width: 383px)">
+                  <source srcset="img/podcasts/112_140/card4.webp" type="image/webp" media="(min-width: 383px)">
+                  <source srcset="img/podcasts/112_140/card4.jpg" type="image/jpeg" media="(min-width: 383px)">
+                  <!-- 318x140 -->
+                  <source srcset="img/podcasts/318_140/card4.avif" type="image/avif" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/318_140/card4.webp" type="image/webp" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/318_140/card4.jpg" type="image/jpeg" media="(min-width: 321px)">
                   <!-- 256x72 -->
                   <source srcset="img/podcasts/256_72/card4.avif" type="image/avif" media="(max-width: 320px)">
                   <source srcset="img/podcasts/256_72/card4.webp" type="image/webp" media="(max-width: 320px)">
                   <source srcset="img/podcasts/256_72/card4.jpg" type="image/jpeg" media="(max-width: 320px)">
                   <img src="img/podcasts/" alt="">
                 </picture>
-                <time class="podcasts__date" datetime="2023-06-5">5&nbsp;июня</time>
+                <time class="font-Muller font-400 podcasts__date" datetime="2023-06-5">5&nbsp;июня</time>
               </div>
             </div>
-            <div class="podcasts__descr flex-column">
-              <time class="podcasts__time" datetime="9:04">9:04</time>
+            <a class="flex-column podcasts__descr owner-size-click" href="#">
+              <time class="font-Muller font-400 podcasts__time" datetime="9:04">9:04</time>
               <h3 class="podcasts__h3">Хэллоу, Африка!</h3>
-              <span class="podcasts__author">Пётр Дмитриевский</span>
-            </div>
+              <span class="font-Muller font-400 podcasts__author">Пётр Дмитриевский</span>
+            </a>
           </li>
-          <li class="podcasts__card flex-column gr1-cell">
+          <li class="flex-column gr1-cell podcasts__card">
             <div class="podcasts__img-wrap">
               <div class="podcasts__img">
                 <picture>
                   <!-- 112x140 -->
-                  <source srcset="img/podcasts/112_140/card5.avif" type="image/avif" media="(min-width: 321px)">
-                  <source srcset="img/podcasts/112_140/card5.webp" type="image/webp" media="(min-width: 321px)">
-                  <source srcset="img/podcasts/112_140/card5.jpg" type="image/jpeg" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/112_140/card5.avif" type="image/avif" media="(min-width: 383px)">
+                  <source srcset="img/podcasts/112_140/card5.webp" type="image/webp" media="(min-width: 383px)">
+                  <source srcset="img/podcasts/112_140/card5.jpg" type="image/jpeg" media="(min-width: 383px)">
+                  <!-- 318x140 -->
+                  <source srcset="img/podcasts/318_140/card5.avif" type="image/avif" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/318_140/card5.webp" type="image/webp" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/318_140/card5.jpg" type="image/jpeg" media="(min-width: 321px)">
                   <!-- 256x72 -->
                   <source srcset="img/podcasts/256_72/card5.avif" type="image/avif" media="(max-width: 320px)">
                   <source srcset="img/podcasts/256_72/card5.webp" type="image/webp" media="(max-width: 320px)">
                   <source srcset="img/podcasts/256_72/card5.jpg" type="image/jpeg" media="(max-width: 320px)">
                   <img src="img/podcasts/" alt="">
                 </picture>
-                <time class="podcasts__date" datetime="2023-06-02">2&nbsp;июня</time>
+                <time class="font-Muller font-400 podcasts__date" datetime="2023-06-02">2&nbsp;июня</time>
               </div>
             </div>
-            <div class="podcasts__descr flex-column">
-              <time class="podcasts__time" datetime="7:03">7:03</time>
+            <a class="flex-column podcasts__descr owner-size-click" href="#">
+              <time class="font-Muller font-400 podcasts__time" datetime="7:03">7:03</time>
               <h3 class="podcasts__h3">Обо всём</h3>
-              <span class="podcasts__author">Пётр Дмитриевский</span>
-            </div>
+              <span class="font-Muller font-400 podcasts__author">Пётр Дмитриевский</span>
+            </a>
           </li>
-          <li class="podcasts__card flex-column gr1-cell">
+          <li class="flex-column gr1-cell podcasts__card">
             <div class="podcasts__img-wrap">
               <div class="podcasts__img">
                 <picture>
                   <!-- 112x140 -->
-                  <source srcset="img/podcasts/112_140/card6.avif" type="image/avif" media="(min-width: 321px)">
-                  <source srcset="img/podcasts/112_140/card6.webp" type="image/webp" media="(min-width: 321px)">
-                  <source srcset="img/podcasts/112_140/card6.jpg" type="image/jpeg" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/112_140/card6.avif" type="image/avif" media="(min-width: 383px)">
+                  <source srcset="img/podcasts/112_140/card6.webp" type="image/webp" media="(min-width: 383px)">
+                  <source srcset="img/podcasts/112_140/card6.jpg" type="image/jpeg" media="(min-width: 383px)">
+                  <!-- 318x140 -->
+                  <source srcset="img/podcasts/318_140/card6.avif" type="image/avif" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/318_140/card6.webp" type="image/webp" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/318_140/card6.jpg" type="image/jpeg" media="(min-width: 321px)">
                   <!-- 256x72 -->
                   <source srcset="img/podcasts/256_72/card6.avif" type="image/avif" media="(max-width: 320px)">
                   <source srcset="img/podcasts/256_72/card6.webp" type="image/webp" media="(max-width: 320px)">
                   <source srcset="img/podcasts/256_72/card6.jpg" type="image/jpeg" media="(max-width: 320px)">
                   <img src="img/podcasts/" alt="">
                 </picture>
-                <time class="podcasts__date" datetime="2023-05-28">28&nbsp;мая</time>
+                <time class="font-Muller font-400 podcasts__date" datetime="2023-05-28">28&nbsp;мая</time>
               </div>
             </div>
-            <div class="podcasts__descr flex-column">
-              <time class="podcasts__time" datetime="9:15">9:15</time>
+            <a class="flex-column podcasts__descr owner-size-click" href="#">
+              <time class="font-Muller font-400 podcasts__time" datetime="9:15">9:15</time>
               <h3 class="podcasts__h3">Физика цвета</h3>
-              <span class="podcasts__author">Татьяна Флеганова</span>
-            </div>
+              <span class="font-Muller font-400 podcasts__author">Татьяна Флеганова</span>
+            </a>
           </li>
-          <li class="podcasts__card flex-column gr1-cell">
+          <li class="flex-column gr1-cell podcasts__card">
             <div class="podcasts__img-wrap">
               <div class="podcasts__img">
                 <picture>
                   <!-- 112x140 -->
-                  <source srcset="img/podcasts/112_140/card7.avif" type="image/avif" media="(min-width: 321px)">
-                  <source srcset="img/podcasts/112_140/card7.webp" type="image/webp" media="(min-width: 321px)">
-                  <source srcset="img/podcasts/112_140/card7.jpg" type="image/jpeg" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/112_140/card7.avif" type="image/avif" media="(min-width: 383px)">
+                  <source srcset="img/podcasts/112_140/card7.webp" type="image/webp" media="(min-width: 383px)">
+                  <source srcset="img/podcasts/112_140/card7.jpg" type="image/jpeg" media="(min-width: 383px)">
+                  <!-- 318x140 -->
+                  <source srcset="img/podcasts/318_140/card7.avif" type="image/avif" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/318_140/card7.webp" type="image/webp" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/318_140/card7.jpg" type="image/jpeg" media="(min-width: 321px)">
                   <!-- 256x72 -->
                   <source srcset="img/podcasts/256_72/card7.avif" type="image/avif" media="(max-width: 320px)">
                   <source srcset="img/podcasts/256_72/card7.webp" type="image/webp" media="(max-width: 320px)">
                   <source srcset="img/podcasts/256_72/card7.jpg" type="image/jpeg" media="(max-width: 320px)">
                   <img src="img/podcasts/" alt="">
                 </picture>
-                <time class="podcasts__date" datetime="2023-05-22">22&nbsp;июня</time>
+                <time class="font-Muller font-400 podcasts__date" datetime="2023-05-22">22&nbsp;июня</time>
               </div>
             </div>
-            <div class="podcasts__descr flex-column">
-              <time class="podcasts__time" datetime="16:04">16:04</time>
+            <a class="flex-column podcasts__descr owner-size-click" href="#">
+              <time class="font-Muller font-400 podcasts__time" datetime="16:04">16:04</time>
               <h3 class="podcasts__h3">Источник звука</h3>
-              <span class="podcasts__author">Пётр Дмитриевский</span>
-            </div>
+              <span class="font-Muller font-400 podcasts__author">Пётр Дмитриевский</span>
+            </a>
           </li>
-          <li class="podcasts__card flex-column gr1-cell">
+          <li class="flex-column gr1-cell podcasts__card">
             <div class="podcasts__img-wrap">
               <div class="podcasts__img">
                 <picture>
                   <!-- 112x140 -->
-                  <source srcset="img/podcasts/112_140/card8.avif" type="image/avif" media="(min-width: 321px)">
-                  <source srcset="img/podcasts/112_140/card8.webp" type="image/webp" media="(min-width: 321px)">
-                  <source srcset="img/podcasts/112_140/card8.jpg" type="image/jpeg" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/112_140/card8.avif" type="image/avif" media="(min-width: 383px)">
+                  <source srcset="img/podcasts/112_140/card8.webp" type="image/webp" media="(min-width: 383px)">
+                  <source srcset="img/podcasts/112_140/card8.jpg" type="image/jpeg" media="(min-width: 383px)">
+                  <!-- 318x140 -->
+                  <source srcset="img/podcasts/318_140/card8.avif" type="image/avif" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/318_140/card8.webp" type="image/webp" media="(min-width: 321px)">
+                  <source srcset="img/podcasts/318_140/card8.jpg" type="image/jpeg" media="(min-width: 321px)">
                   <!-- 256x72 -->
                   <source srcset="img/podcasts/256_72/card8.avif" type="image/avif" media="(max-width: 320px)">
                   <source srcset="img/podcasts/256_72/card8.webp" type="image/webp" media="(max-width: 320px)">
                   <source srcset="img/podcasts/256_72/card8.jpg" type="image/jpeg" media="(max-width: 320px)">
                   <img src="img/podcasts/" alt="">
                 </picture>
-                <time class="podcasts__date" datetime="2023-05-18">18&nbsp;мая</time>
+                <time class="font-Muller font-400 podcasts__date" datetime="2023-05-18">18&nbsp;мая</time>
               </div>
             </div>
-            <div class="podcasts__descr flex-column">
-              <time class="podcasts__time" datetime="6:55">6:55</time>
+            <a class="flex-column podcasts__descr owner-size-click" href="#">
+              <time class="font-Muller font-400 podcasts__time" datetime="6:55">6:55</time>
               <h3 class="podcasts__h3">Правила этикета</h3>
-              <span class="podcasts__author">Татьяна Флеганова</span>
-            </div>
+              <span class="font-Muller font-400 podcasts__author">Татьяна Флеганова</span>
+            </a>
           </li>
         </ul>
       </div>
     </section>
-    <section class="section-pd broadcast">
+    <section class="section-pd broadcast" id="broadcast-id">
       <div class="container">
         <div class="flex-row flex-justify-spb gutters-v1 broadcast__items">
           <div class="flex-column flex-justify-spb broadcast__col1">
             <h2 class="broadcast__h2">Передачи</h2>
-            <div class="broadcast__adv flex-row flex-justify-spb">
-              <div class="broadcast__mic"></div>
-              <div class="flex-column-rev broadcast__arch">
-                <a href="#" class="broadcast__arch-btn">Архив</a>
-                <p class="broadcast__arch-text">В архив попадают все передачи, которые вы пропустили! Enjoy:)</p>
+            <div class="broadcast__adv flex-row">
+              <div class="flex-row broadcast__mic-wrap">
+                <div class="broadcast__mic"></div>
+                <div class="flex-column-rev flex-justify-spb broadcast__arch">
+                  <a href="#" class="font-Muller font-500 broadcast__arch-btn">Архив</a>
+                  <p class="font-Muller font-400 font-lh-150pr broadcast__arch-text">В архив попадают все передачи, которые вы пропустили! Enjoy:)</p>
+                </div>
               </div>
             </div>
           </div>
           <ul id="id-broadcast-ul" class="gr2-grid grid-row-auto list-reset broadcast__cards">
-            <li class="broadcast__card flex-column gr2-cell">
+            <li class="flex-column gr2-cell broadcast__card">
               <picture>
                 <!-- 255x148 -->
                 <source srcset="img/broadcast/255_148/card1.avif" type="image/avif" media="(min-width: 321px)">
@@ -281,12 +321,17 @@
               <div class="flex-column flex-justify-spb flex-justify-spb broadcast__descr">
                 <div class="flex-column">
                   <h3 class="broadcast__h3">О людях и книгах</h3>
-                  <span class="broadcast__text">Анонсируется отдельно</span>
+                  <span class="font-Muller font-400 broadcast__text">Анонсируется отдельно</span>
                 </div>
-                <span class="broadcast__more">Подробнее</span>
+                <a class="flex-row flex-align-center broadcast__more" href="#">
+                  <span class="font-Muller font-400 font-st-italic">Подробнее</span>
+                  <svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="broadcast__arrow">
+                    <path d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"/>
+                  </svg>
+                </a>
               </div>
             </li>
-            <li class="broadcast__card flex-column gr2-cell">
+            <li class="flex-column gr2-cell broadcast__card">
               <picture>
                 <!-- 255x148 -->
                 <source srcset="img/broadcast/255_148/card2.avif" type="image/avif" media="(min-width: 321px)">
@@ -300,12 +345,17 @@
               <div class="flex-column flex-justify-spb broadcast__descr">
                 <div class="flex-column">
                   <h3 class="broadcast__h3">Графомания td</h3>
-                  <span class="broadcast__text">По понедельникам в <time datetime="10:00">10:00</time></span>
+                  <span class="font-Muller font-400 broadcast__text">По понедельникам в <time datetime="10:00">10:00</time></span>
                 </div>
-                <span class="broadcast__more">Подробнее</span>
+                <a class="flex-row flex-align-center broadcast__more" href="#">
+                  <span class="font-Muller font-400 font-st-italic">Подробнее</span>
+                  <svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="broadcast__arrow">
+                    <path d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"/>
+                  </svg>
+                </a>
               </div>
             </li>
-            <li class="broadcast__card flex-column gr2-cell">
+            <li class="flex-column gr2-cell broadcast__card">
               <picture>
                 <!-- 255x148 -->
                 <source srcset="img/broadcast/255_148/card3.avif" type="image/avif" media="(min-width: 321px)">
@@ -318,13 +368,18 @@
               </picture>
               <div class="flex-column flex-justify-spb broadcast__descr">
                 <div class="flex-column">
-                  <h3 class="broadcast__h3">Не Рим, не Троя</h3>
-                  <span class="broadcast__text">По вторникам в <time datetime="12:00">12:00</time></span>
+                  <h3 class="broadcast__h3">Не Рим,&nbsp;не Троя</h3>
+                  <span class="font-Muller font-400 broadcast__text">По вторникам в <time datetime="12:00">12:00</time></span>
                 </div>
-                <span class="broadcast__more">Подробнее</span>
+                <a class="flex-row flex-align-center broadcast__more" href="#">
+                  <span class="font-Muller font-400 font-st-italic">Подробнее</span>
+                  <svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="broadcast__arrow">
+                    <path d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"/>
+                  </svg>
+                </a>
               </div>
             </li>
-            <li class="broadcast__card flex-column gr2-cell">
+            <li class="flex-column gr2-cell broadcast__card">
               <picture>
                 <!-- 255x148 -->
                 <source srcset="img/broadcast/255_148/card4.avif" type="image/avif" media="(min-width: 321px)">
@@ -338,12 +393,17 @@
               <div class="flex-column flex-justify-spb broadcast__descr">
                 <div class="flex-column">
                   <h3 class="broadcast__h3">Эрудит</h3>
-                  <span class="broadcast__text">По пятницам в <time datetime="17:00">17:00</time></span>
+                  <span class="font-Muller font-400 broadcast__text">По пятницам в <time datetime="17:00">17:00</time></span>
                 </div>
-                <span class="broadcast__more">Подробнее</span>
+                <a class="flex-row flex-align-center broadcast__more" href="#">
+                  <span class="font-Muller font-400 font-st-italic">Подробнее</span>
+                  <svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="broadcast__arrow">
+                    <path d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"/>
+                  </svg>
+                </a>
               </div>
             </li>
-            <li class="broadcast__card flex-column gr2-cell">
+            <li class="flex-column gr2-cell broadcast__card">
               <picture>
                 <!-- 255x148 -->
                 <source srcset="img/broadcast/255_148/card5.avif" type="image/avif" media="(min-width: 321px)">
@@ -357,12 +417,17 @@
               <div class="flex-column flex-justify-spb broadcast__descr">
                 <div class="flex-column">
                   <h3 class="broadcast__h3">Тонкости эпох</h3>
-                  <span class="broadcast__text">По субботам в <time datetime="10:00">10:00</time></span>
+                  <span class="font-Muller font-400 broadcast__text">По субботам в <time datetime="10:00">10:00</time></span>
                 </div>
-                <span class="broadcast__more">Подробнее</span>
+                <a class="flex-row flex-align-center broadcast__more" href="#">
+                  <span class="font-Muller font-400 font-st-italic">Подробнее</span>
+                  <svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="broadcast__arrow">
+                    <path d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"/>
+                  </svg>
+                </a>
               </div>
             </li>
-            <li class="broadcast__card flex-column gr2-cell">
+            <li class="flex-column gr2-cell broadcast__card">
               <picture>
                 <!-- 255x148 -->
                 <source srcset="img/broadcast/255_148/card6.avif" type="image/avif" media="(min-width: 321px)">
@@ -376,26 +441,29 @@
               <div class="flex-column flex-justify-spb broadcast__descr">
                 <div class="flex-column">
                   <h3 class="broadcast__h3">Живые мысли</h3>
-                  <span class="broadcast__text">По воскресеньям в <time datetime="15:30">15:30</time></span>
+                  <span class="font-Muller font-400 broadcast__text">По воскресеньям в <time datetime="15:30">15:30</time></span>
                 </div>
-                <span class="broadcast__more">Подробнее</span>
+                <a class="flex-row flex-align-center broadcast__more" href="#">
+                  <span class="font-Muller font-400 font-st-italic">Подробнее</span>
+                  <svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="broadcast__arrow">
+                    <path d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z"/>
+                  </svg>
+                </a>
               </div>
             </li>
           </ul>
         </div>
       </div>
-      <div class="broadcast__bottom">
-      </div>
     </section>
-    <section class="section-pd guests">
+    <section class="section-pd guests" id="guests-id">
       <div class="container">
         <div class="guests__header flex-column">
           <h2 class="guests__h2">Гости</h2>
-          <span class="guests__intro">У нас бывают:</span>
-          <p class="guests__intro-descr">Блогеры, арт-критики и деятели искусства, музыканты, молодые учёные и люди науки, историки, филологи и много других интересных гостей!</p>
+          <span class="font-Muller font-700 font-lh-150pr guests__intro">У нас бывают:</span>
+          <p class="font-Muller font-400 font-lh-160pr guests__intro-descr">Блогеры, арт-критики и деятели искусства, музыканты, молодые учёные и люди науки, историки, филологи и много других интересных гостей!</p>
         </div>
-        <ul class="flex-column gutters-v2 guests__items list-reset">
-          <li class="flex-column guests__card gutters-v1">
+        <ul class="flex-column guests__items list-reset">
+          <li class="flex-column guests__card">
             <picture>
               <!-- 432x272 -->
               <source srcset="img/guests/432_272/guest1.avif" type="image/avif"  media="(min-width: 769px)">
@@ -414,12 +482,12 @@
             <div class="flex-column flex-justify-spb gutters-v1 guests__text">
               <div>
                 <h3 class="guests__h3">Ольга Мартынова</h3>
-                <p class="guests__descr">Российский искусствовед, арт-критик, куратор выставок, дизайнер, кандидат культурологии. Арт-критик газеты «Коммерсантъ». Ведёт активную блогерскую деятельность как куратор музея «Гараж», коим является с 2016 года.</p>
+                <p class="font-Muller font-400 font-lh-180pr guests__descr">Российский искусствовед, арт-критик, куратор выставок, дизайнер, кандидат культурологии. Арт-критик газеты «Коммерсантъ». Ведёт активную блогерскую деятельность как куратор музея «Гараж», коим является с 2016 года.</p>
               </div>
-              <a href="#" class="guests__onair">Эфиры с гостем</a>
+              <a href="#" class="font-Muller font-500 guests__onair">Эфиры с гостем</a>
             </div>
           </li>
-          <li class="flex-column guests__card gutters-v1">
+          <li class="flex-column guests__card">
             <picture>
               <!-- 432x272 -->
               <source srcset="img/guests/432_272/guest2.avif" type="image/avif"  media="(min-width: 769px)">
@@ -438,12 +506,12 @@
             <div class="flex-column flex-justify-spb gutters-v1 guests__text">
               <div>
                 <h3 class="guests__h3">Денис Гришин</h3>
-                <p class="guests__descr">Однозначно, элементы политического процесса являются только методом политического участия и смешаны с не уникальными данными до степени совершённой неузнаваемости, из-за чего возрастает их статус бесполезности.</p>
+                <p class="font-Muller font-400 font-lh-180pr guests__descr">Однозначно, элементы политического процесса являются только методом политического участия и смешаны с не уникальными данными до степени совершённой неузнаваемости, из-за чего возрастает их статус бесполезности.</p>
               </div>
-              <a href="#" class="guests__onair">Эфиры с гостем</a>
+              <a href="#" class="font-Muller font-500 guests__onair">Эфиры с гостем</a>
             </div>
           </li>
-          <li class="flex-column guests__card gutters-v1">
+          <li class="flex-column guests__card">
             <picture>
               <!-- 432x272 -->
               <source srcset="img/guests/432_272/guest3.avif" type="image/avif"  media="(min-width: 769px)">
@@ -462,21 +530,21 @@
             <div class="flex-column flex-justify-spb gutters-v1 guests__text">
               <div>
                 <h3 class="guests__h3">Ольга Мартынова</h3>
-                <p class="guests__descr">С другой стороны, высококачественный прототип будущего проекта выявляет срочную потребность дальнейших направлений развития. В рамках спецификации современных стандартов, реплицированные с зарубежных источников.</p>
+                <p class="font-Muller font-400 font-lh-180pr guests__descr">С другой стороны, высококачественный прототип будущего проекта выявляет срочную потребность дальнейших направлений развития. В рамках спецификации современных стандартов, реплицированные с зарубежных источников.</p>
               </div>
-              <a href="#" class="guests__onair">Эфиры с гостем</a>
+              <a href="#" class="font-Muller font-500 guests__onair">Эфиры с гостем</a>
             </div>
           </li>
         </ul>
       </div>
     </section>
-    <section class="section-pd playlists">
+    <section class="section-pd playlists" id="playlists-id">
       <div class="container">
         <div class="flex-row flex-wrap flex-justify-spb gutters-v1 playlists__items">
           <div class="flex-column playlists__col1">
             <h2 class="playlists__h2">Плейлисты</h2>
-            <p class="playlists__info">Раздел «Плейлисты» может содержать информацию, не предназначенную для несовершеннолетних</p>
-            <span class="playlists__trademark">© 2021 l W-Wave</span>
+            <p class="font-Muller font-400 playlists__info">Раздел «Плейлисты» может содержать информацию, не предназначенную для несовершеннолетних</p>
+            <span class="font-Muller font-300 font-lh-22px playlists__trademark">© 2021 l W-Wave</span>
             <span class="playlists__age">18+</span>
           </div>
           <ul class="gr3-grid grid-row-auto playlists__cards list-reset">
@@ -501,10 +569,10 @@
                   <img src="img/playlist/svg/flag_ru.svg" alt="" class="playlists__flag">
                 </div>
               </div>
-              <div class="flex-column playlists__text">
+              <a class="flex-column playlists__text owner-size-click" href="#">
                 <h3 class="playlists__h3">Ploho</h3>
-                <span class="playlists__descr">3 последних альбома</span>
-              </div>
+                <span class="font-Muller font-400 playlists__descr">3 последних альбома</span>
+              </a>
             </li>
             <li class="playlists__card flex-column gr3-cell">
               <div class="flex-row flex-justify-center">
@@ -527,10 +595,10 @@
                   <img src="img/playlist/svg/flag_ru.svg" alt="" class="playlists__flag">
                 </div>
               </div>
-              <div class="flex-column playlists__text">
+              <a class="flex-column playlists__text owner-size-click" href="#">
                 <h3 class="playlists__h3">Molchat Doma</h3>
-                <span class="playlists__descr">Все песни</span>
-              </div>
+                <span class="font-Muller font-400 playlists__descr">Все песни</span>
+              </a>
             </li>
             <li class="playlists__card flex-column gr3-cell">
               <div class="flex-row flex-justify-center">
@@ -553,10 +621,10 @@
                   <img src="img/playlist/svg/flag_ru.svg" alt="" class="playlists__flag">
                 </div>
               </div>
-              <div class="flex-column playlists__text">
+              <a class="flex-column playlists__text owner-size-click" href="#">
                 <h3 class="playlists__h3">Motorama</h3>
-                <span class="playlists__descr">Все синглы</span>
-              </div>
+                <span class="font-Muller font-400 playlists__descr">Все синглы</span>
+              </a>
             </li>
             <li class="playlists__card flex-column gr3-cell">
               <div class="flex-row flex-justify-center">
@@ -579,10 +647,10 @@
                   <img src="img/playlist/svg/flag_ru.svg" alt="" class="playlists__flag">
                 </div>
               </div>
-              <div class="flex-column playlists__text">
+              <a class="flex-column playlists__text owner-size-click" href="#">
                 <h3 class="playlists__h3">Human Tetris</h3>
-                <span class="playlists__descr">3 последних альбома</span>
-              </div>
+                <span class="font-Muller font-400 playlists__descr">3 последних альбома</span>
+              </a>
             </li>
             <li class="playlists__card flex-column gr3-cell">
               <div class="flex-row flex-justify-center">
@@ -605,10 +673,10 @@
                   <img src="img/playlist/svg/flag_ru.svg" alt="" class="playlists__flag">
                 </div>
               </div>
-              <div class="flex-column playlists__text">
+              <a class="flex-column playlists__text owner-size-click" href="#">
                 <h3 class="playlists__h3">Буерак</h3>
-                <span class="playlists__descr">Все EP</span>
-              </div>
+                <span class="font-Muller font-400 playlists__descr">Все EP</span>
+              </a>
             </li>
             <li class="playlists__card flex-column gr3-cell">
               <div class="flex-row flex-justify-center">
@@ -631,10 +699,10 @@
                   <img src="img/playlist/svg/flag_ru.svg" alt="" class="playlists__flag">
                 </div>
               </div>
-              <div class="flex-column playlists__text">
+              <a class="flex-column playlists__text owner-size-click" href="#">
                 <h3 class="playlists__h3">Июльские&shy; Дни</h3>
-                <span class="playlists__descr">Альбом «Колокол»</span>
-              </div>
+                <span class="font-Muller font-400 playlists__descr">Альбом «Колокол»</span>
+              </a>
             </li>
             <li class="playlists__card flex-column gr3-cell">
               <div class="flex-row flex-justify-center">
@@ -657,10 +725,10 @@
                   <img src="img/playlist/svg/flag_gb.svg" alt="" class="playlists__flag">
                 </div>
               </div>
-              <div class="flex-column playlists__text">
+              <a class="flex-column playlists__text owner-size-click" href="#">
                 <h3 class="playlists__h3">Joy Division</h3>
-                <span class="playlists__descr">Лучшее за всё время</span>
-              </div>
+                <span class="font-Muller font-400 playlists__descr">Лучшее за всё время</span>
+              </a>
             </li>
             <li class="playlists__card flex-column gr3-cell">
               <div class="flex-row flex-justify-center">
@@ -683,10 +751,10 @@
                   <img src="img/playlist/svg/flag_gb.svg" alt="" class="playlists__flag">
                 </div>
               </div>
-              <div class="flex-column playlists__text">
+              <a class="flex-column playlists__text owner-size-click" href="#">
                 <h3 class="playlists__h3">The Cure</h3>
-                <span class="playlists__descr">Лучшее за всё время</span>
-              </div>
+                <span class="font-Muller font-400 playlists__descr">Лучшее за всё время</span>
+              </a>
             </li>
             <li class="playlists__card flex-column gr3-cell">
               <div class="flex-row flex-justify-center">
@@ -709,10 +777,10 @@
                   <img src="img/playlist/svg/flag_gb.svg" alt="" class="playlists__flag">
                 </div>
               </div>
-              <div class="flex-column playlists__text">
+              <a class="flex-column playlists__text owner-size-click" href="#">
                 <h3 class="playlists__h3">The Smiths</h3>
-                <span class="playlists__descr">Период 1984–1988</span>
-              </div>
+                <span class="font-Muller font-400 playlists__descr">Период 1984–1988</span>
+              </a>
             </li>
             <li class="playlists__card flex-column gr3-cell">
               <div class="flex-row flex-justify-center">
@@ -735,10 +803,10 @@
                   <img src="img/playlist/svg/flag_gb.svg" alt="" class="playlists__flag">
                 </div>
               </div>
-              <div class="flex-column playlists__text">
+              <a class="flex-column playlists__text owner-size-click" href="#">
                 <h3 class="playlists__h3">New Order</h3>
-                <span class="playlists__descr">Хиты</span>
-              </div>
+                <span class="font-Muller font-400 playlists__descr">Хиты</span>
+              </a>
             </li>
             <li class="playlists__card flex-column gr3-cell">
               <div class="flex-row flex-justify-center">
@@ -761,10 +829,10 @@
                   <img src="img/playlist/svg/flag_gb.svg" alt="" class="playlists__flag">
                 </div>
               </div>
-              <div class="flex-column playlists__text">
+              <a class="flex-column playlists__text owner-size-click" href="#">
                 <h3 class="playlists__h3">Bauhaus</h3>
-                <span class="playlists__descr">Все синглы</span>
-              </div>
+                <span class="font-Muller font-400 playlists__descr">Все синглы</span>
+              </a>
             </li>
             <li class="playlists__card flex-column gr3-cell">
               <div class="flex-row flex-justify-center">
@@ -787,18 +855,18 @@
                   <img src="img/playlist/svg/flag_gb.svg" alt="" class="playlists__flag">
                 </div>
               </div>
-              <div class="flex-column playlists__text">
+              <a class="flex-column playlists__text owner-size-click" href="#">
                 <h3 class="playlists__h3">Gang Of Four</h3>
-                <span class="playlists__descr">3 последних альбома</span>
-              </div>
+                <span class="font-Muller font-400 playlists__descr">3 последних альбома</span>
+              </a>
             </li>
           </ul>
         </div>
       </div>
       </section>
-      <section class="adv">
+      <section class="section-pd adv">
         <div class="container">
-          <div class="adv__items flex-column flex-nowrap flex-justify-spb gutters-v1">
+          <div class="adv__items flex-column flex-nowrap flex-justify-spb">
             <div class="adv__radio flex-column flex-justify-center">
               <div class="adv__radio-wrap">
                 <picture>
@@ -824,22 +892,25 @@
               </div>
             </div>
             <div class="adv__info flex-column">
-              <div class="adv__header">
+              <div class="adv__info-top">
                 <h2 class="adv__h2">
                   Будь с нами на одной волне!
                 </h2>
+                <div class="adv__header"></div>
               </div>
-              <p class="adv__p">
-                Друзья, рады представить вам продукт нашего производства! Да-да, несмотря на то, что мы только начали свой путь радиовещателей, нам хочется, чтобы вы могли как следует нас расслышать:)
-              </p>
-              <p class="adv__p">
-                Итак, встречайте! Портативный радиоприёмник-колонка W-Wave 1.0 xm. Тщательный подбор всех делатей, ручная сборка, качественный звук. Пока доступно только 60 штук в 3 цветах, но мы активно трудимся над новыми партиями и дизайном. Спешите приобрести!
-              </p>
-              <span class="adv__price">
+              <div class="flex flex-column adv__info-mid">
+                <p class="font-Muller font-400 adv__p">
+                  Друзья, рады представить вам продукт нашего производства! Да-да, несмотря на то, что мы только начали свой путь радиовещателей, нам хочется, чтобы вы могли как следует нас расслышать:)
+                </p>
+                <p class="font-Muller font-400 adv__p">
+                  Итак, встречайте! Портативный радиоприёмник-колонка W-Wave 1.0 xm. Тщательный подбор всех делатей, ручная сборка, качественный звук. Пока доступно только 60 штук в 3 цветах, но мы активно трудимся над новыми партиями и дизайном. Спешите приобрести!
+                </p>
+              </div>
+              <span class="font-Muller font-500 adv__price">
                 2 800 ₽
               </span>
-              <div class="adv__button-wrap">
-                <a href="#" class="adv__button">
+              <div class="adv__button-wrap" tabindex="0">
+                <a href="#" class="font-Muller font-500 font-lh-100pr adv__button">
                   Купить на Яндекс.Маркет
                 </a>
               </div>
@@ -847,17 +918,17 @@
         </div>
       </div>
     </section>
-    <section class="section-pd about">
+    <section class="section-pd about" id="about-id">
       <div class="container">
         <div class="flex-row flex-justify-spb gutters-v1 about__row1">
           <div class="flex-column about__descr">
             <h2 class="about__h2">
               О нас
             </h2>
-            <span class="about__hello">
+            <span class="font-Muller font-700 font-lh-150pr about__hello">
               Приём-приём! Как слышно? Мы уже в эфире? Отлично, поехали!
             </span>
-            <p class="about__text">
+            <p class="font-Muller font-400 font-lh-160pr about__text">
               Друзья, мы будем очень рады, если вы поможете стать нам лучше. Нам важен каждый слушатель, поэтому вы можете поделиться обратной связью о наших предеачах, темах, подборках и вообще обо всём! Это можно сделать либо написав нам в форме ниже, либо кликнув на наши соцсети в подвале сайта. Спасибо! Услышимся!:)
             </p>
           </div>
@@ -874,8 +945,8 @@
           </div>
         </div>
         <ul class="gr4-grid grid-row-auto list-reset about__cards">
-          <li class="gr4-cell flex-column gutters-v1 about__card">
-            <picture>
+          <li class="gr4-cell flex-column about__card">
+            <picture class="about__img">
               <!-- 255x255 -->
               <source srcset="img/about/255_255/card1.avif" type="image/avif" media="(min-width: 1025px)">
               <source srcset="img/about/255_255/card1.webp" type="image/webp" media="(min-width: 1025px)">
@@ -890,17 +961,17 @@
               <source srcset="img/about/255_255/card1.jpg" type="image/jpeg" media="(max-width: 768px)">
               <img src="img/about/" alt="">
             </picture>
-            <div class="about__text">
+            <div class="font-Muller font-400 font-lh-160pr about__text">
               <h3 class="about__h3">
                 Дмитрий Гутенберг
               </h3>
-              <p class="about__p">
+              <p class="font-Muller font-400 about__p">
                 Эксперт (ну, почти) по всем вопросам (почти)
               </p>
             </div>
           </li>
-          <li class="gr4-cell flex-column gutters-v1 about__card">
-            <picture>
+          <li class="gr4-cell flex-column about__card">
+            <picture class="about__img">
               <!-- 255x255 -->
               <source srcset="img/about/255_255/card2.avif" type="image/avif" media="(min-width: 1025px)">
               <source srcset="img/about/255_255/card2.webp" type="image/webp" media="(min-width: 1025px)">
@@ -915,17 +986,17 @@
               <source srcset="img/about/255_255/card2.jpg" type="image/jpeg" media="(max-width: 768px)">
               <img src="img/about/" alt="">
             </picture>
-            <div class="about__text">
+            <div class="font-Muller font-400 font-lh-160pr about__text">
               <h3 class="about__h3">
                 Анна Васильева
               </h3>
-              <p class="about__p">
+              <p class="font-Muller font-400 about__p">
                 Как я здесь оказалась? А главное — зачем?
               </p>
             </div>
           </li>
-          <li class="gr4-cell flex-column gutters-v1 about__card">
-            <picture>
+          <li class="gr4-cell flex-column about__card">
+            <picture class="about__img">
               <!-- 255x255 -->
               <source srcset="img/about/255_255/card3.avif" type="image/avif" media="(min-width: 1025px)">
               <source srcset="img/about/255_255/card3.webp" type="image/webp" media="(min-width: 1025px)">
@@ -940,17 +1011,17 @@
               <source srcset="img/about/255_255/card3.jpg" type="image/jpeg" media="(max-width: 768px)">
               <img src="img/about/" alt="">
             </picture>
-            <div class="about__text">
+            <div class="font-Muller font-400 font-lh-160pr about__text">
               <h3 class="about__h3">
                 Пётр Дмитриевский
               </h3>
-              <p class="about__p">
+              <p class="font-Muller font-400 about__p">
                 Господа! Внимание! Благодарю за внимание!
               </p>
             </div>
           </li>
-          <li class="gr4-cell flex-column gutters-v1 about__card">
-            <picture>
+          <li class="gr4-cell flex-column about__card">
+            <picture class="about__img">
               <!-- 255x255 -->
               <source srcset="img/about/255_255/card4.avif" type="image/avif" media="(min-width: 1025px)">
               <source srcset="img/about/255_255/card4.webp" type="image/webp" media="(min-width: 1025px)">
@@ -965,26 +1036,28 @@
               <source srcset="img/about/255_255/card4.jpg" type="image/jpeg" media="(max-width: 768px)">
               <img src="img/about/" alt="">
             </picture>
-            <div class="about__text">
+            <div class="font-Muller font-400 font-lh-160pr about__text">
               <h3 class="about__h3">
                 Татьяна Флеганова
               </h3>
-              <p class="about__p">
+              <p class="font-Muller font-400 about__p">
                 Одна я в пальто стою красивая, а вокруг…
               </p>
             </div>
           </li>
         </ul>
         <form method="POST" action="https://jsonplaceholder.typicode.com/posts" class="about__form flex-column gutters-v1">
-          <textarea name="message" cols="1" rows="5" class="about__form-row1 about__form-common" placeholder="Что скажете?"></textarea>
+          <textarea name="message" class="font-Muller font-400 about__form-common about__form-row1" placeholder="Что скажете?"></textarea>
           <div class="about__form-row2 flex-row flex-wrap flex-justify-spb gutters-v1">
-            <input type="text" name="name" class="about__form-edit about__form-common about__form-input" placeholder="Имя" required>
-            <input type="email" name="email" class="about__form-edit about__form-common about__form-input" placeholder="Email" required>
+            <input type="text" name="name" class="about__form-edit font-Muller font-400 about__form-common about__form-input" placeholder="Имя" required>
+            <input type="email" name="email" class="about__form-edit font-Muller font-400 about__form-common about__form-input" placeholder="Email" required>
           </div>
-          <button type="submit" class="form__button">Отправить</button>
-          <div>
-            <input id="confirm-id" type="checkbox" class="form__confirm">
-            <label for="confirm-id" class="form__label">Согласен на обработку персональных данных</label>
+          <div class="flex flex-column">
+            <button type="submit" class="font-Muller font-500 about__form-btn">Отправить</button>
+            <div class="flex-row flex-align-center form__confirm-wrap" tabindex="0">
+              <input id="confirm-id" type="checkbox" class="form__confirm" tabindex="-1">
+              <label for="confirm-id" class="font-Muller font-500 form__label">Согласен на обработку персональных данных</label>
+            </div>
           </div>
         </form>
       </div>
@@ -994,63 +1067,68 @@
     <div class="container">
       <div class="footer__top">
         <div class="footer__left flex-column">
-          <a href="#" class="footer__logo">
+          <a href="#" class="footer__logo" tabindex="-1">
             <img src="img/footer/svg/logo.svg" alt="Логотип компании">
           </a>
           <ul class="flex-row footer__social list-reset">
             <li>
-              <a href="#">
-                <img class="footer__vk" src="img/footer/svg/yt.svg" alt="Мы в youtube">
+              <a href="#" class="footer__vk" aria-label="мы в контакте">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21.543 6.498C22 8.28 22 12 22 12C22 12 22 15.72 21.543 17.502C21.289 18.487 20.546 19.262 19.605 19.524C17.896 20 12 20 12 20C12 20 6.107 20 4.395 19.524C3.45 19.258 2.708 18.484 2.457 17.502C2 15.72 2 12 2 12C2 12 2 8.28 2.457 6.498C2.711 5.513 3.454 4.738 4.395 4.476C6.107 4 12 4 12 4C12 4 17.896 4 19.605 4.476C20.55 4.742 21.292 5.516 21.543 6.498ZM10 15.5L16 12L10 8.5V15.5Z"/>
+                </svg>
               </a>
             </li>
             <li>
-              <a href="#">
-                <img class="footer__ok" src="img/footer/svg/ok.svg" alt="Мы в одноклассниках">
+              <a href="#" class="footer__ok" aria-label="мы в одноклассниках">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.2338 8.14624C10.2338 9.0928 11.0569 9.86023 12.0724 9.86023C13.088 9.86023 13.9111 9.0928 13.9111 8.14624C13.9111 7.19968 13.088 6.43231 12.0724 6.43231C11.0569 6.43231 10.2338 7.19968 10.2338 8.14624Z"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8 2C4.68629 2 2 4.68629 2 8V16C2 19.3137 4.68629 22 8 22H16C19.3137 22 22 19.3137 22 16V8C22 4.68629 19.3137 2 16 2H8ZM7.62436 8.14617C7.62436 5.85633 9.61571 4 12.0724 4C14.5292 4 16.5206 5.85633 16.5206 8.14617C16.5206 10.4361 14.5292 12.2925 12.0724 12.2925C9.61571 12.2925 7.62436 10.4361 7.62436 8.14617ZM16.5472 14.4252C16.4907 14.4674 15.4236 15.2535 13.6427 15.5916L16.3307 18.0748C16.8034 18.5147 16.804 19.2285 16.3321 19.6691C15.8602 20.1097 15.0946 20.1104 14.6216 19.6704L12.012 17.3016L9.64177 19.6552C9.4046 19.8846 9.08805 20 8.77109 20C8.46897 20 8.16645 19.8952 7.93169 19.6842C7.45075 19.252 7.43691 18.5384 7.90062 18.0902L10.4519 15.6048C8.62134 15.2746 7.51009 14.468 7.45295 14.4252C6.93171 14.0357 6.84811 13.3262 7.26591 12.8404C7.6839 12.3547 8.44492 12.2767 8.96616 12.6662C8.97719 12.6744 10.1394 13.4883 12.012 13.4895C13.8847 13.4883 15.0228 12.6744 15.0338 12.6662C15.5551 12.2767 16.3163 12.3547 16.7341 12.8404C17.1519 13.3262 17.0683 14.0357 16.5472 14.4252Z"/>
+                </svg>
               </a>
             </li>
             <li>
-              <a href="#">
-                <img class="footer__vk" src="img/footer/svg/vk.svg" alt="Мы в контакте">
+              <a href="#" class="footer__yt" aria-label="мы в youtube">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M2 8C2 4.68652 4.68652 2 8 2H16C19.3135 2 22 4.68652 22 8V16C22 19.3135 19.3135 22 16 22H8C4.68652 22 2 19.3135 2 16V8ZM17.3438 13.4473C17.7139 13.7778 18.0845 14.1089 18.4121 14.4795C18.5415 14.626 18.6665 14.7754 18.7769 14.9346C18.835 15.0181 18.8892 15.104 18.938 15.1934C19.0425 15.3848 19.0439 15.5859 18.9727 15.7383C18.9058 15.8809 18.7754 15.981 18.606 15.9917L16.4209 15.9912C15.8569 16.0356 15.4077 15.8208 15.0293 15.4575C14.7271 15.1675 14.4468 14.8584 14.1558 14.5586C14.0366 14.4355 13.9116 14.3198 13.7622 14.2285C13.5962 14.1265 13.4419 14.0991 13.3086 14.1455C13.2031 14.1821 13.1104 14.2656 13.0352 14.3955C12.8613 14.6938 12.8213 15.0244 12.8047 15.3564C12.7812 15.8418 12.6255 15.9688 12.1089 15.9917C11.0044 16.0405 9.95654 15.8823 8.98242 15.3574C8.12305 14.8945 7.45801 14.2417 6.87842 13.502C5.75 12.0601 4.88574 10.4775 4.10938 8.84912C3.93457 8.48242 4.0625 8.28662 4.4917 8.27881C5.20459 8.26611 5.91797 8.26758 6.63086 8.27832C6.9209 8.28271 7.11279 8.43896 7.22461 8.69727C7.60986 9.59082 8.08203 10.4409 8.67432 11.229L8.78369 11.3721C8.90918 11.5317 9.04541 11.6826 9.22217 11.7969C9.4751 11.9604 9.66797 11.9062 9.7876 11.6401C9.86377 11.4707 9.89697 11.2896 9.91357 11.1084C9.97021 10.4873 9.97705 9.86621 9.87891 9.24756C9.81787 8.86035 9.58643 8.61035 9.17725 8.53711C8.96826 8.49951 8.99902 8.42676 9.10059 8.31445C9.27637 8.12061 9.44141 8.00049 9.771 8.00049L12.2397 8C12.6284 8.07178 12.7158 8.23633 12.7686 8.60596L12.771 11.1909C12.7661 11.334 12.8472 11.7578 13.1191 11.8511C13.3374 11.9189 13.4814 11.7539 13.6118 11.624C14.2036 11.0317 14.6255 10.333 15.0034 9.60986C15.1699 9.29102 15.314 8.96094 15.4536 8.63037C15.5024 8.51562 15.5635 8.42822 15.6455 8.36816C15.7378 8.30029 15.8564 8.26758 16.0117 8.26953L18.3887 8.27246C18.4585 8.27246 18.5298 8.27295 18.5991 8.28418C18.8101 8.31836 18.9404 8.37939 18.9985 8.4834C19.0503 8.57666 19.0439 8.70508 18.9854 8.87939C18.7979 9.43555 18.4399 9.90283 18.0835 10.3677L18.041 10.4233C17.6436 10.9409 17.2202 11.4399 16.8271 11.96C16.4658 12.4346 16.4941 12.6738 16.9429 13.0864C17.0752 13.208 17.2095 13.3276 17.3438 13.4473Z" />
+                </svg>
               </a>
             </li>
           </ul>
         </div>
-        <!-- <nav> -->
-          <ul class="footer__right flex-column list-reset">
-            <li class="footer__menu-item">
-              Подкасты
-            </li>
-            <li class="footer__menu-item">
-              Передачи
-            </li>
-            <li class="footer__menu-item">
-              Гости
-            </li>
-            <li class="footer__menu-item">
-              Плейлисты
-            </li>
-            <li class="footer__menu-item">
-              Сетка
-            </li>
-            <li class="footer__menu-item">
-              О&nbsp;нас
-            </li>
-            <li class="footer__menu-item">
-              Новости
-            </li>
-            <li class="footer__menu-item">
-              Блоги
-            </li>
-            <li class="footer__menu-item">
-              Топы
-            </li>
-          </ul>
-        <!-- </nav> -->
+        <ul class="font-Muller font-400 flex-column list-reset footer__right">
+          <li class="footer__menu-item" tabindex="0">
+            <a tabindex="-1" href="#podcasts-id">Подкасты</a>
+          </li>
+          <li class="footer__menu-item" tabindex="0">
+            <a tabindex="-1" href="#broadcast-id">Передачи</a>
+          </li>
+          <li class="footer__menu-item" tabindex="0">
+            <a tabindex="-1" href="#guests-id">Гости</a>
+          </li>
+          <li class="footer__menu-item" tabindex="0">
+            <a tabindex="-1" href="#playlists-id">Плейлисты</a>
+          </li>
+          <li class="footer__menu-item" tabindex="0">
+            <a tabindex="-1" href="#">Сетка</a>
+          </li>
+          <li class="footer__menu-item" tabindex="0">
+            <a tabindex="-1" href="#about-id">О&nbsp;нас</a>
+          </li>
+          <li class="footer__menu-item" tabindex="0">
+            <a tabindex="-1" href="#">Новости</a>
+          </li>
+          <li class="footer__menu-item" tabindex="0">
+            <a tabindex="-1" href="#">Блоги</a>
+          </li>
+          <li class="footer__menu-item" tabindex="0">
+            <a tabindex="-1" href="#">Топы</a>
+          </li>
+        </ul>
       </div>
     </div>
   </footer>
   <div class="footer__bottom flex-row flex-justify-center flex-align-center">
-    <span class="footer__bottom-text">W-WAVE ® 2023</span>
+    <span class="font-Muller font-400 font-lh-100pr footer__bottom-text">W-WAVE ® 2023</span>
   </div>
 </body>
 </html>

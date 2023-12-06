@@ -25,3 +25,61 @@
   src:  url('../fonts/Muller/MullerBold.woff2') format('woff2'),
         url('../fonts/Muller/MullerBold.woff') format('woff');
 }
+
+.font-Muller {
+  font-family: Muller, sans-serif;
+  font-style: normal;
+  line-height: normal;
+}
+
+.font-300 {
+  font-weight: 300;
+}
+
+.font-400 {
+  font-weight: 400;
+}
+
+.font-500 {
+  font-weight: 500;
+}
+
+.font-700 {
+  font-weight: 700;
+}
+
+.font-st-normal {
+  font-style: normal;
+}
+
+.font-st-italic {
+  font-style: italic;
+}
+
+.font-lh-normal {
+  line-height: normal;
+}
+
+.font-lh-100pr {
+  line-height: 100%; /* 48px */
+}
+
+.font-lh-150pr {
+  line-height: 150%; /* 24px */
+}
+
+.font-lh-160pr {
+  line-height: 160%; /* 24px */
+}
+
+.font-lh-180pr {
+  line-height: 180%; /* 28.8px */
+}
+
+.font-lh-18px {
+  line-height: 18px; /* 183.333% */
+}
+
+.font-lh-22px {
+  line-height: 22px; /* 183.333% */
+}
